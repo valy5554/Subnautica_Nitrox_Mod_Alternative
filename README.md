@@ -1,5 +1,7 @@
 # Subnautica Multiplayer Mod: Alternative
 
+> **Base Version:** Derived from [Nitrox v1.9.0.0](https://github.com/subnauticanitrox/nitrox)
+
 An open-source, multiplayer modification for the game Subnautica. This version focuses on providing a stable, synchronized experience with specific fixes for vehicle physics and state management.
 
 ---
