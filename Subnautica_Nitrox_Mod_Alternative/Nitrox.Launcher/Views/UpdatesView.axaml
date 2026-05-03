@@ -144,7 +144,7 @@
                             </StackPanel>
 
                             <!-- Download Button -->
-                            <Button
+                            <!-- <Button
                                 Classes="primary"
                                 Command="{Binding DownloadUpdateCommand}"
                                 HorizontalAlignment="Center"
@@ -166,7 +166,7 @@
                                 <TextBlock FontSize="12">
                                     Download version <Run Text="{Binding OfficialVersion, FallbackValue='.'}" />
                                 </TextBlock>
-                            </Button>
+                            </Button> -->
                         </StackPanel>
                     </StackPanel>
                 </Grid>

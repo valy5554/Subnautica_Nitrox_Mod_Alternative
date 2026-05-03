@@ -1,3 +1,4 @@
+using System;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
@@ -10,6 +11,9 @@ internal partial class MainWindow : Abstract.WindowEx<MainWindowViewModel>
 {
     public MainWindow()
     {
+        //Environment.SetEnvironmentVariable("--data-path", "NitroxALTERnative");
+        //Environment.SetEnvironmentVariable("data-path", "NitroxALTERnative", EnvironmentVariableTarget.Process);
+        
         InitializeComponent();
 
         PointerPressedEvent.Raised.Subscribe(new AnonymousObserver<(object, RoutedEventArgs)>(args =>

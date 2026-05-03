@@ -76,14 +76,14 @@
                                            Text="{TemplateBinding Content}" />
                             </Grid>
                             <!-- Update Available green dot -->
-                            <Border Height="10" Width="10" CornerRadius="5" 
+                            <!-- <Border Height="10" Width="10" CornerRadius="5" 
                                     Background="{DynamicResource BrandOnColor}"
                                     BorderBrush="{DynamicResource BrandPanelBackground}"
                                     BorderThickness="2"
                                     HorizontalAlignment="Left"
                                     Margin="49.25,13.5,0,0"
                                     IsVisible="False"
-                                    ToolTip.Tip="New Nitrox update available" />
+                                    ToolTip.Tip="New Nitrox update available" /> -->
                         </Panel>
                     </ControlTemplate>
                 </Setter>
@@ -183,8 +183,12 @@
         <Grid ColumnDefinitions="274,*" RowDefinitions="*">
             <!--  Navigation (left side)  -->
             <Border Classes="nav" Grid.Column="0">
-                <Grid RowDefinitions="80,*">
-                    <TextBlock Classes="header">NITROX</TextBlock>
+                <Grid RowDefinitions="Auto,*">
+                    <TextBlock Classes="header">
+                        <Run Text="NITROX"/>
+                        <LineBreak/>
+                        <Run Text="ALTERnative" Foreground="#1ec6f5"/> 
+                    </TextBlock>
                     <Panel Grid.Row="1">
                         <StackPanel Classes="nav">
                             <TextBlock Classes="subheader">PLAY</TextBlock>
@@ -256,7 +260,7 @@
                             Classes="nav"
                             Margin="0,0,0,20"
                             VerticalAlignment="Bottom">
-                            <RadioButton
+                            <!-- <RadioButton
                                 Classes="updates"
                                 Command="{Binding OpenUpdatesViewCommand}"
                                 Content="Updates"
@@ -271,7 +275,7 @@
                                         </Binding.ConverterParameter>
                                     </Binding>
                                 </RadioButton.IsChecked>
-                            </RadioButton>
+                            </RadioButton> -->
                             <RadioButton
                                 Command="{Binding OpenOptionsViewCommand}"
                                 Content="Options"
