@@ -31,12 +31,12 @@ The following vehicles have been fully optimized for multi-user synchronization:
 
 ---
 
-## 📥 Installing Nitrox
-Get started by installing the Nitrox Mod. Follow the steps carefully and you will be ready to play in no time!
+## 📥 Installing Nitrox Alternative Mod
+Get started by installing the Nitrox Alternative Mod. Follow the steps carefully and you will be ready to play in no time!
 
 ### 📖 Tutorial
 
-1. **Download:** [Download Nitrox here](https://nitrox.rux.gg/download)
+1. **Download:** [Download Nitrox Alternative here](https://nitrox.rux.gg/download)
 2. **Unzip:** Extract the file to your preferred launcher location.
    > **⚠️ IMPORTANT:** Do **NOT** launch it while it is zipped. It will not save progress and will encounter more bugs.
 3. **Permissions:** Run `NitroxLauncher` as **Administrator**.
