@@ -6,7 +6,7 @@ An open-source, multiplayer modification for the game Subnautica. This version f
 
 ## ⚖️ License & Credits
 > **Original Project:** Derived from [Nitrox v1.9.0.0](https://github.com/subnauticanitrox/nitrox)
-* **License:** This project is licensed under the [GPL-3.0 License](LICENSE).
+* **License:** This project is licensed under the [GPL-3.0 License]([LICENSE](https://github.com/valy5554/Subnautica_Nitrox_Mod_Alternative/blob/main/LICENSE.txt)).
 * **Disclaimer:** This is an unofficial fork. Please do not contact the official Nitrox team for support regarding the modifications in this version.
 
 ---
