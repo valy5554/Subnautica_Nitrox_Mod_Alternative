@@ -30,9 +30,6 @@ The following vehicles have been fully optimized for multi-user synchronization:
 
 ---
 
-## 📥 Installing Nitrox Alternative Mod
-Get started by installing the Nitrox Alternative Mod. Follow the steps carefully and you will be ready to play in no time!
-
 ## 📥 Installation
 
 1. **Download:** [Download the Latest Release Zip](https://github.com/valy5554/Subnautica_Nitrox_Mod_Alternative/releases)
@@ -50,11 +47,9 @@ Get started by installing the Nitrox Alternative Mod. Follow the steps carefully
 
 ## ⚙️ Requirements
 *   **Subnautica** (Check for version compatibility)
-*   Stable Internet Connection (Host requires Port Forwarding for port `11000`)
-*   Administrative privileges for the launcher
+*   Stable Internet Connection
 
 ---
 
 ## 🤝 Credits & Contributing
 This project is an alternative branch based on the work of the [Nitrox team](https://github.com/subnauticanitrox/nitrox).
-Found a bug with the Cyclops docking? Open an **Issue** or submit a **Pull Request**. Contributions to physics stabilization are always welcome.
