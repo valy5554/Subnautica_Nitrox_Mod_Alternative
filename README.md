@@ -12,10 +12,9 @@ An open-source, multiplayer modification for the game Subnautica. This version f
 ---
 
 ## 🛠️ Key Features
-*   **Synchronized Vehicles:** Full state-sync for all piloted craft.
+*   **Synchronized Vehicles:** Sync for piloted craft.
 *   **Persistent World:** Shared base building and storage.
 *   **Inventory Stability:** Low-latency item transfers between players.
-*   **Fixed Physics:** Reduced "clipping" when multiple players occupy the same vessel.
 
 ---
 
@@ -24,7 +23,7 @@ The following vehicles have been fully optimized for multi-user synchronization:
 
 | Vehicle | Status | Sync Features |
 | :--- | :--- | :--- |
-| **Seamoth** | ✅ Fixed | Pilot animations, torpedo bay, and light toggles. |
+| **Seamoth** | ✅ Fixed | Torpedo bay, and light toggles. |
 | **Prawn Suit** | ✅ Fixed | Arm attachments (Drill/Grapple) and jump-jet physics. |
 | **Cyclops** | ✅ Fixed | Multi-crew interior access, engine room, and docking bay. |
 | **Neptune Rocket** | ✅ Fixed | Final stage construction and launch sequence. |
