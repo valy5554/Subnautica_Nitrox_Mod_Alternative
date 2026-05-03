@@ -1,4 +1,4 @@
-# Subnautica Multiplayer Mod: Alternative
+# Subnautica Nitrox Multiplayer Alternative Mod
 
 
 
