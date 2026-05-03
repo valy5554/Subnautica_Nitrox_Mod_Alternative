@@ -38,7 +38,7 @@
                Text="Nitrox does not support publishing"
                ContinueOnError="ErrorAndStop" />
     </Target>
-    
+
     <!-- Windows specific properties -->
     <PropertyGroup Condition="$(_IsWindowsTarget)">
 

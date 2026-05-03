@@ -81,6 +81,13 @@
 
     <!-- ProjectReference with Properties/AdditionalProperties aren't given to referenced project inside Visual Studio, so we need to copy it by hand.. -->
     <!-- See: https://github.com/dotnet/msbuild/issues/5599 -->
+    <!-- With ReferenceOutputAssembly=false, building only the launcher can skip NitroxPatcher (e.g. after Clean), leaving bin\...\net472 empty. Force a net472 build first. -->
+    <Target Name="_NitroxEnsurePatcherNet472Built" BeforeTargets="_NitroxFixBuildInsideVisualStudio" Condition="'$(BuildingInsideVisualStudio)' == 'true'">
+        <MSBuild Projects="$(MSBuildProjectDirectory)\..\NitroxPatcher\NitroxPatcher.csproj"
+                 Targets="Build"
+                 Properties="Configuration=$(Configuration);TargetFramework=net472" />
+    </Target>
+
     <Target Name="_NitroxFixBuildInsideVisualStudio" AfterTargets="$(_NitroxMoveDependenciesToLibTaskName)" Condition="'$(BuildingInsideVisualStudio)' == 'true'">
 
         <Message Importance="High"
