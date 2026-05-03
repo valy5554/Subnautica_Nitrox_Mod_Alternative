@@ -50,5 +50,6 @@ Get started by installing the Nitrox Mod. Follow the steps carefully and you wil
 
 ---
 
-## 🤝 Contributing
+## 🤝 Credits & Contributing
+This project is an alternative branch based on the work of the [Nitrox team](https://github.com/subnauticanitrox/nitrox).
 Found a bug with the Cyclops docking? Open an **Issue** or submit a **Pull Request**. Contributions to physics stabilization are always welcome.
