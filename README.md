@@ -23,7 +23,7 @@ The following vehicles have been fully optimized for multi-user synchronization:
 
 | Vehicle | Status | Sync Features |
 | :--- | :--- | :--- |
-| **Seamoth** | ✅ Fixed | Torpedo bay, and light toggles. |
+| **Seamoth** | ✅ Fixed | Light toggles. |
 | **Prawn Suit** | ✅ Fixed | Arm attachments (Drill/Grapple) and jump-jet physics. |
 | **Cyclops** | ✅ Fixed | Multi-crew interior access, engine room, and docking bay. |
 | **Neptune Rocket** | ✅ Fixed | Final stage construction and launch sequence. |
