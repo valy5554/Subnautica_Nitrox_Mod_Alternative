@@ -1,0 +1,666 @@
+version=1
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+language=C#
+lastDtbSucceeded
+
+[sliceDimensions]
+TargetFramework=net10.0
+
+[properties]
+AssemblyName=Nitrox.Model.Subnautica
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=14.0
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=Nitrox.Model.Subnautica
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>bin/Debug/net10.0/Nitrox.Model.Subnautica.dll
+TargetRefPath=<PATH>obj/Debug/net10.0/ref/Nitrox.Model.Subnautica.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:1
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../Nitrox.Model.Subnautica=Nitrox.Model.Subnautica
+/out:obj\Debug\net10.0\Nitrox.Model.Subnautica.dll
+/refout:obj\Debug\net10.0\refint\Nitrox.Model.Subnautica.dll
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+DataStructures/GameLogic/
+ AbsoluteEntityCell.cs
+ AuroraEventData.cs
+ Bases/
+  BaseData.cs
+  BuildPieceIdentifier.cs
+  NitroxBaseFace.cs
+ Creatures/Actions/SerializableCreatureAction.cs
+ CyclopsDamageInfoData.cs
+ CyclopsFireData.cs
+ DamageTakenData.cs
+ Entities/Bases/
+  BaseLeakEntity.cs
+  BuildEntity.cs
+  GhostEntity.cs
+  InteriorPieceEntity.cs
+  MapRoomEntity.cs
+  ModuleEntity.cs
+  MoonpoolEntity.cs
+ Entities/
+  CellRootEntity.cs
+  CreatureRespawnEntity.cs
+  EscapePodWorldEntity.cs
+  GeyserWorldEntity.cs
+  GlobalRootEntity.cs
+  InstalledBatteryEntity.cs
+  InstalledModuleEntity.cs
+  InventoryEntity.cs
+  InventoryItemEntity.cs
+  IUwePrefabFactory.cs
+  Metadata/Bases/
+   BaseAnchoredCellGhostMetadata.cs
+   BaseAnchoredFaceGhostMetadata.cs
+   BaseDeconstructableGhostMetadata.cs
+   GhostMetadata.cs
+  Metadata/
+   BatteryMetadata.cs
+   BeaconMetadata.cs
+   BlueprintHandTargetMetadata.cs
+   ConstructorMetadata.cs
+   CrafterMetadata.cs
+   CrashHomeMetadata.cs
+   CyclopsLightingMetadata.cs
+   CyclopsMetadata.cs
+   DrillableMetadata.cs
+   EatableMetadata.cs
+   EggMetadata.cs
+   EntityMetadata.cs
+   EntitySignMetadata.cs
+   EscapePodMetadata.cs
+   ExosuitMetadata.cs
+   FireExtinguisherHolderMetadata.cs
+   FlareMetadata.cs
+   FlashlightMetadata.cs
+   FruitPlantMetadata.cs
+   GenericConsoleMetadata.cs
+   IncubatorMetadata.cs
+   KeypadMetadata.cs
+   NamedColoredMetadata.cs
+   PlantableMetadata.cs
+   PlayerMetadata.cs
+   PrecursorComputerTerminalMetadata.cs
+   PrecursorDisableGunTerminalMetadata.cs
+   PrecursorDoorwayMetadata.cs
+   PrecursorKeyTerminalMetadata.cs
+   PrecursorTeleporterActivationTerminalMetadata.cs
+   PrecursorTeleporterMetadata.cs
+   RadiationMetadata.cs
+   RocketMetadata.cs
+   SealedDoorMetadata.cs
+   SeamothMetadata.cs
+   SeaTreaderMetadata.cs
+   StarshipDoorMetadata.cs
+   StayAtLeashPositionMetadata.cs
+   SubNameInputMetadata.cs
+   VehicleMetadata.cs
+   WaterParkCreatureMetadata.cs
+   WeldableWallPanelGenericMetadata.cs
+  OxygenPipeEntity.cs
+  PathBasedChildEntity.cs
+  PlacedWorldEntity.cs
+  PlaceholderGroupWorldEntity.cs
+  PlanterEntity.cs
+  PlayerEntity.cs
+  PrefabChildEntity.cs
+  PrefabPlaceholderEntity.cs
+  RadiationLeakEntity.cs
+  ReefbackChildEntity.cs
+  ReefbackEntity.cs
+  SerializedWorldEntity.cs
+  UwePrefab.cs
+  UweWorldEntity.cs
+  VehicleEntity.cs
+  WorldEntity.cs
+ Entity.cs
+ InitialPDAData.cs
+ InitialStoryGoalData.cs
+ IntroCinematicMode.cs
+ NitroxScheduledGoal.cs
+ NitroxTechType.cs
+ PDAEntry.cs
+ PDALogEntry.cs
+ PingInstancePreference.cs
+ PlayerAnimation.cs
+ PlayerStatsData.cs
+ RandomStartGenerator.cs
+ SessionSettings.cs
+ SubnauticaPlayerPreferences.cs
+ TimeData.cs
+DataStructures/Surrogates/
+ QuaternionSurrogate.cs
+ Vector3Surrogate.cs
+Extensions/
+ DataExtensions.cs
+ SunbeamEventExtensions.cs
+GlobalUsings.cs
+Helper/
+ SubnauticaConstants.cs
+ SubnauticaMap.cs
+ TextureScaler.cs
+ VehicleHelper.cs
+Logger/SubnauticaInGameLogger.cs
+MultiplayerSession/
+ PlayerContext.cs
+ PlayerSettings.cs
+Packets/
+ AggressiveWhenSeeTargetChanged.cs
+ AnimationChangeEvent.cs
+ AttackCyclopsTargetChanged.cs
+ AuroraAndTimeUpdate.cs
+ BaseDeconstructed.cs
+ BedEnter.cs
+ BedExit.cs
+ BenchChanged.cs
+ BuildingDesyncWarning.cs
+ BuildingResync.cs
+ BuildingResyncRequest.cs
+ CellVisibilityChanged.cs
+ ChatMessage.cs
+ CheatCommand.cs
+ ClearPlanter.cs
+ CoffeeMachineUse.cs
+ CreatureActionChanged.cs
+ CreaturePoopPerformed.cs
+ CyclopsDamage.cs
+ CyclopsDamagePointRepaired.cs
+ CyclopsDecoyLaunch.cs
+ CyclopsFireCreated.cs
+ CyclopsFireSuppression.cs
+ CyclopsRuntimeState.cs
+ DebugStartMapPacket.cs
+ DeconstructionBegin.cs
+ Disconnect.cs
+ DiscordRequestIP.cs
+ DropSimulationOwnership.cs
+ EntityDestroyed.cs
+ EntityMetadataUpdate.cs
+ EntityReparented.cs
+ EntitySpawnedByClient.cs
+ EntityTransformUpdates.cs
+ EscapePodChanged.cs
+ ExosuitArmActionPacket.cs
+ FastCheatChanged.cs
+ FireDoused.cs
+ FMODAssetPacket.cs
+ FMODCustomEmitterPacket.cs
+ FMODCustomLoopingEmitterPacket.cs
+ FMODEventInstancePacket.cs
+ FMODStudioEmitterPacket.cs
+ FootstepPacket.cs
+ GameModeChanged.cs
+ GoalCompleted.cs
+ GrapplingHookMovement.cs
+ InitialPlayerSync.cs
+ ItemPosition.cs
+ JoinQueueInfo.cs
+ KeepInventoryChanged.cs
+ KnownTechEntryAdd.cs
+ LargeWaterParkDeconstructed.cs
+ LeakRepaired.cs
+ MedicalCabinetClicked.cs
+ ModifyConstructedAmount.cs
+ Movement.cs
+ MultiplayerSessionPolicy.cs
+ MultiplayerSessionPolicyRequest.cs
+ MultiplayerSessionReservation.cs
+ MultiplayerSessionReservationRequest.cs
+ MutePlayer.cs
+ OpenableStateChanged.cs
+ OrderedBuildPacket.cs
+ PDAEncyclopediaEntryAdd.cs
+ PDALogEntryAdd.cs
+ PDAScanFinished.cs
+ PermsChanged.cs
+ PickupItem.cs
+ PieceDeconstructed.cs
+ PinMoved.cs
+ PlaceBase.cs
+ PlaceGhost.cs
+ PlaceModule.cs
+ PlayerCinematicControllerCall.cs
+ PlayerDeathEvent.cs
+ PlayerHeldItemChanged.cs
+ PlayerInCyclopsMovement.cs
+ PlayerJoinedMultiplayerSession.cs
+ PlayerJoiningMultiplayerSession.cs
+ PlayerKicked.cs
+ PlayerMovement.cs
+ PlayerQuickSlotsBindingChanged.cs
+ PlayerSeeOutOfCellEntity.cs
+ PlayerStats.cs
+ PlayerSyncFinished.cs
+ PlayerTeleported.cs
+ PlayerUnseeOutOfCellEntity.cs
+ PlaySunbeamEvent.cs
+ PvPAttack.cs
+ RadioPlayPendingMessage.cs
+ RangedAttackLastTargetUpdate.cs
+ RecipePinned.cs
+ RemoveCreatureCorpse.cs
+ RocketLaunch.cs
+ RocketResync.cs
+ Schedule.cs
+ SeaDragonAttackTarget.cs
+ SeaDragonGrabExosuit.cs
+ SeaDragonSwatAttack.cs
+ SeamothModulesAction.cs
+ SeaTreaderChunkPickedUp.cs
+ SeaTreaderSpawnedChunk.cs
+ ServerCommand.cs
+ ServerStopped.cs
+ SetIntroCinematicMode.cs
+ SignalPingVisibilityChanged.cs
+ SimulationOwnershipChange.cs
+ SimulationOwnershipRequest.cs
+ SimulationOwnershipResponse.cs
+ SleepComplete.cs
+ SleepStatusUpdate.cs
+ SpawnEntities.cs
+ StasisSphereHit.cs
+ StasisSphereShot.cs
+ StoryGoalExecuted.cs
+ SubRootChanged.cs
+ TimeChange.cs
+ ToggleLights.cs
+ TorpedoHit.cs
+ TorpedoShot.cs
+ TorpedoTargetAcquired.cs
+ UpdateBase.cs
+ UpdateDisplaySurfaceWater.cs
+ UpdateInPrecursor.cs
+ VehicleDocking.cs
+ VehicleMovements.cs
+ VehicleOnPilotModeChanged.cs
+ VehicleUndocking.cs
+ WaterParkDeconstructed.cs
+ WeldAction.cs
+
+[metadataReferences]
+../
+ Nitrox.Assets.Subnautica/protobuf-net.dll
+ Nitrox.Model/obj/Debug/net10.0/ref/Nitrox.Model.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net10.0/Nitrox.Model.Subnautica.GeneratedMSBuildEditorConfig.editorconfig
+
+---
+
+[project]
+language=C#
+primary
+lastDtbSucceeded
+
+[sliceDimensions]
+TargetFramework=net472
+
+[properties]
+AssemblyName=Nitrox.Model.Subnautica
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=7.3
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=Nitrox.Model.Subnautica
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>bin/Debug/net472/Nitrox.Model.Subnautica.dll
+TargetRefPath=
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:4
+/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../Nitrox.Model.Subnautica=Nitrox.Model.Subnautica
+/out:obj\Debug\net472\Nitrox.Model.Subnautica.dll
+/subsystemversion:6.00
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+DataStructures/GameLogic/
+ AbsoluteEntityCell.cs
+ AuroraEventData.cs
+ Bases/
+  BaseData.cs
+  BuildPieceIdentifier.cs
+  NitroxBaseFace.cs
+ Creatures/Actions/SerializableCreatureAction.cs
+ CyclopsDamageInfoData.cs
+ CyclopsFireData.cs
+ DamageTakenData.cs
+ Entities/Bases/
+  BaseLeakEntity.cs
+  BuildEntity.cs
+  GhostEntity.cs
+  InteriorPieceEntity.cs
+  MapRoomEntity.cs
+  ModuleEntity.cs
+  MoonpoolEntity.cs
+ Entities/
+  CellRootEntity.cs
+  CreatureRespawnEntity.cs
+  EscapePodWorldEntity.cs
+  GeyserWorldEntity.cs
+  GlobalRootEntity.cs
+  InstalledBatteryEntity.cs
+  InstalledModuleEntity.cs
+  InventoryEntity.cs
+  InventoryItemEntity.cs
+  IUwePrefabFactory.cs
+  Metadata/Bases/
+   BaseAnchoredCellGhostMetadata.cs
+   BaseAnchoredFaceGhostMetadata.cs
+   BaseDeconstructableGhostMetadata.cs
+   GhostMetadata.cs
+  Metadata/
+   BatteryMetadata.cs
+   BeaconMetadata.cs
+   BlueprintHandTargetMetadata.cs
+   ConstructorMetadata.cs
+   CrafterMetadata.cs
+   CrashHomeMetadata.cs
+   CyclopsLightingMetadata.cs
+   CyclopsMetadata.cs
+   DrillableMetadata.cs
+   EatableMetadata.cs
+   EggMetadata.cs
+   EntityMetadata.cs
+   EntitySignMetadata.cs
+   EscapePodMetadata.cs
+   ExosuitMetadata.cs
+   FireExtinguisherHolderMetadata.cs
+   FlareMetadata.cs
+   FlashlightMetadata.cs
+   FruitPlantMetadata.cs
+   GenericConsoleMetadata.cs
+   IncubatorMetadata.cs
+   KeypadMetadata.cs
+   NamedColoredMetadata.cs
+   PlantableMetadata.cs
+   PlayerMetadata.cs
+   PrecursorComputerTerminalMetadata.cs
+   PrecursorDisableGunTerminalMetadata.cs
+   PrecursorDoorwayMetadata.cs
+   PrecursorKeyTerminalMetadata.cs
+   PrecursorTeleporterActivationTerminalMetadata.cs
+   PrecursorTeleporterMetadata.cs
+   RadiationMetadata.cs
+   RocketMetadata.cs
+   SealedDoorMetadata.cs
+   SeamothMetadata.cs
+   SeaTreaderMetadata.cs
+   StarshipDoorMetadata.cs
+   StayAtLeashPositionMetadata.cs
+   SubNameInputMetadata.cs
+   VehicleMetadata.cs
+   WaterParkCreatureMetadata.cs
+   WeldableWallPanelGenericMetadata.cs
+  OxygenPipeEntity.cs
+  PathBasedChildEntity.cs
+  PlacedWorldEntity.cs
+  PlaceholderGroupWorldEntity.cs
+  PlanterEntity.cs
+  PlayerEntity.cs
+  PrefabChildEntity.cs
+  PrefabPlaceholderEntity.cs
+  RadiationLeakEntity.cs
+  ReefbackChildEntity.cs
+  ReefbackEntity.cs
+  SerializedWorldEntity.cs
+  UwePrefab.cs
+  UweWorldEntity.cs
+  VehicleEntity.cs
+  WorldEntity.cs
+ Entity.cs
+ InitialPDAData.cs
+ InitialStoryGoalData.cs
+ IntroCinematicMode.cs
+ NitroxScheduledGoal.cs
+ NitroxTechType.cs
+ PDAEntry.cs
+ PDALogEntry.cs
+ PingInstancePreference.cs
+ PlayerAnimation.cs
+ PlayerStatsData.cs
+ RandomStartGenerator.cs
+ SessionSettings.cs
+ SubnauticaPlayerPreferences.cs
+ TimeData.cs
+DataStructures/Surrogates/
+ QuaternionSurrogate.cs
+ Vector3Surrogate.cs
+Extensions/
+ DataExtensions.cs
+ SunbeamEventExtensions.cs
+GlobalUsings.cs
+Helper/
+ SubnauticaConstants.cs
+ SubnauticaMap.cs
+ TextureScaler.cs
+ VehicleHelper.cs
+Logger/SubnauticaInGameLogger.cs
+MultiplayerSession/
+ PlayerContext.cs
+ PlayerSettings.cs
+Packets/
+ AggressiveWhenSeeTargetChanged.cs
+ AnimationChangeEvent.cs
+ AttackCyclopsTargetChanged.cs
+ AuroraAndTimeUpdate.cs
+ BaseDeconstructed.cs
+ BedEnter.cs
+ BedExit.cs
+ BenchChanged.cs
+ BuildingDesyncWarning.cs
+ BuildingResync.cs
+ BuildingResyncRequest.cs
+ CellVisibilityChanged.cs
+ ChatMessage.cs
+ CheatCommand.cs
+ ClearPlanter.cs
+ CoffeeMachineUse.cs
+ CreatureActionChanged.cs
+ CreaturePoopPerformed.cs
+ CyclopsDamage.cs
+ CyclopsDamagePointRepaired.cs
+ CyclopsDecoyLaunch.cs
+ CyclopsFireCreated.cs
+ CyclopsFireSuppression.cs
+ CyclopsRuntimeState.cs
+ DebugStartMapPacket.cs
+ DeconstructionBegin.cs
+ Disconnect.cs
+ DiscordRequestIP.cs
+ DropSimulationOwnership.cs
+ EntityDestroyed.cs
+ EntityMetadataUpdate.cs
+ EntityReparented.cs
+ EntitySpawnedByClient.cs
+ EntityTransformUpdates.cs
+ EscapePodChanged.cs
+ ExosuitArmActionPacket.cs
+ FastCheatChanged.cs
+ FireDoused.cs
+ FMODAssetPacket.cs
+ FMODCustomEmitterPacket.cs
+ FMODCustomLoopingEmitterPacket.cs
+ FMODEventInstancePacket.cs
+ FMODStudioEmitterPacket.cs
+ FootstepPacket.cs
+ GameModeChanged.cs
+ GoalCompleted.cs
+ GrapplingHookMovement.cs
+ InitialPlayerSync.cs
+ ItemPosition.cs
+ JoinQueueInfo.cs
+ KeepInventoryChanged.cs
+ KnownTechEntryAdd.cs
+ LargeWaterParkDeconstructed.cs
+ LeakRepaired.cs
+ MedicalCabinetClicked.cs
+ ModifyConstructedAmount.cs
+ Movement.cs
+ MultiplayerSessionPolicy.cs
+ MultiplayerSessionPolicyRequest.cs
+ MultiplayerSessionReservation.cs
+ MultiplayerSessionReservationRequest.cs
+ MutePlayer.cs
+ OpenableStateChanged.cs
+ OrderedBuildPacket.cs
+ PDAEncyclopediaEntryAdd.cs
+ PDALogEntryAdd.cs
+ PDAScanFinished.cs
+ PermsChanged.cs
+ PickupItem.cs
+ PieceDeconstructed.cs
+ PinMoved.cs
+ PlaceBase.cs
+ PlaceGhost.cs
+ PlaceModule.cs
+ PlayerCinematicControllerCall.cs
+ PlayerDeathEvent.cs
+ PlayerHeldItemChanged.cs
+ PlayerInCyclopsMovement.cs
+ PlayerJoinedMultiplayerSession.cs
+ PlayerJoiningMultiplayerSession.cs
+ PlayerKicked.cs
+ PlayerMovement.cs
+ PlayerQuickSlotsBindingChanged.cs
+ PlayerSeeOutOfCellEntity.cs
+ PlayerStats.cs
+ PlayerSyncFinished.cs
+ PlayerTeleported.cs
+ PlayerUnseeOutOfCellEntity.cs
+ PlaySunbeamEvent.cs
+ PvPAttack.cs
+ RadioPlayPendingMessage.cs
+ RangedAttackLastTargetUpdate.cs
+ RecipePinned.cs
+ RemoveCreatureCorpse.cs
+ RocketLaunch.cs
+ RocketResync.cs
+ Schedule.cs
+ SeaDragonAttackTarget.cs
+ SeaDragonGrabExosuit.cs
+ SeaDragonSwatAttack.cs
+ SeamothModulesAction.cs
+ SeaTreaderChunkPickedUp.cs
+ SeaTreaderSpawnedChunk.cs
+ ServerCommand.cs
+ ServerStopped.cs
+ SetIntroCinematicMode.cs
+ SignalPingVisibilityChanged.cs
+ SimulationOwnershipChange.cs
+ SimulationOwnershipRequest.cs
+ SimulationOwnershipResponse.cs
+ SleepComplete.cs
+ SleepStatusUpdate.cs
+ SpawnEntities.cs
+ StasisSphereHit.cs
+ StasisSphereShot.cs
+ StoryGoalExecuted.cs
+ SubRootChanged.cs
+ TimeChange.cs
+ ToggleLights.cs
+ TorpedoHit.cs
+ TorpedoShot.cs
+ TorpedoTargetAcquired.cs
+ UpdateBase.cs
+ UpdateDisplaySurfaceWater.cs
+ UpdateInPrecursor.cs
+ VehicleDocking.cs
+ VehicleMovements.cs
+ VehicleOnPilotModeChanged.cs
+ VehicleUndocking.cs
+ WaterParkDeconstructed.cs
+ WeldAction.cs
+
+[metadataReferences]
+../
+ Nitrox.Assets.Subnautica/protobuf-net.dll
+ Nitrox.Model/bin/Debug/net472/Nitrox.Model.dll
+<NETFXREF>/v4.7.2/
+ mscorlib.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net472/Nitrox.Model.Subnautica.GeneratedMSBuildEditorConfig.editorconfig

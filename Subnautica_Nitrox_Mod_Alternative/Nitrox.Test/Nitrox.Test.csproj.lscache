@@ -1,0 +1,142 @@
+version=1
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Nitrox.Test
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=14.0
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=Nitrox.Test
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>bin/Debug/net10.0/Nitrox.Test.dll
+TargetRefPath=<PATH>obj/Debug/net10.0/ref/Nitrox.Test.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,DIMA001,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:1
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../Nitrox.Test=Nitrox.Test
+/out:obj\Debug\net10.0\Nitrox.Test.dll
+/refout:obj\Debug\net10.0\refint\Nitrox.Test.dll
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+Client/Communication/
+ DeferredPacketReceiverTest.cs
+ MultiplayerSession/ConnectionState/ConnectionNegotiatedState/
+  SessionJoinedStateTests.cs
+  SessionReservationRejectedStateTests.cs
+  SessionReservedStateTests.cs
+ MultiplayerSession/ConnectionState/ConnectionNegotiatingState/
+  AwaitingReservationCredentialsStateTests.cs
+  AwaitingSessionReservationStateTests.cs
+  EstablishingSessionPolicyStateTests.cs
+ MultiplayerSession/
+  ConnectionState/DisconnectedStateTests.cs
+  MultiplayerSessionMangerTests.cs
+  TestConstants.cs
+ PacketSuppressorTest.cs
+ TestNonActionPacket.cs
+Client/GameLogic/
+ Helper/BaseSerializationHelperTest.cs
+ PlayerLogic/PlayerPreferences/PlayerPreferenceManagerTests.cs
+GlobalUsings.cs
+Helper/
+ AssertHelper.cs
+ Faker/
+  NitroxAbstractFaker.cs
+  NitroxActionFaker.cs
+  NitroxAutoFaker.cs
+  NitroxCollectionFaker.cs
+  NitroxFaker.cs
+  NitroxNullableFaker.cs
+  NitroxOptionalFaker.cs
+ TypeExtension.cs
+Model/
+ Configuration/Validators/SaveNameAttributeTests.cs
+ Core/DependencyInjectionTests.cs
+ DataStructures/
+  CircularBufferTest.cs
+  NitroxIdTest.cs
+  NitroxInt3Test.cs
+  NitroxVersionTest.cs
+  PriorityQueueTest.cs
+  ThreadSafeListTest.cs
+  ThreadSafeQueueTest.cs
+  ThreadSafeSetTest.cs
+  Unity/
+   NitroxQuaternionTest.cs
+   NitroxTransformTest.cs
+  Util/OptionalTest.cs
+ Extensions/IpAddressExtensionsTest.cs
+ ExtensionsTests.cs
+ Helper/
+  HashTreeTest.cs
+  KeyValueStoreTest.cs
+  ReflectTest.cs
+ Packets/
+  PacketsSerializableTest.cs
+  Processors/PacketProcessorTest.cs
+ Platforms/
+  OS/Windows/RegistryTest.cs
+  OSTestMethodAttribute.cs
+Patcher/Patches/
+ PatchesTranspilerTest.cs
+ Persistent/Language_LoadLanguageFile_PatchTest.cs
+Patcher/PatchTestHelper.cs
+Server/
+ GameLogic/Entities/SubnauticaUwePrefabFactoryTest.cs
+ Helper/XorRandomTest.cs
+ Serialization/WorldServiceTest.cs
+SetupAssemblyInitializer.cs
+TestAutoFacRegistrar.cs
+
+[metadataReferences]
+../
+ Nitrox.Model/obj/Debug/net10.0/ref/Nitrox.Model.dll
+ Nitrox.Server.Subnautica/obj/Debug/net10.0/ref/Nitrox.Server.Subnautica.dll
+ NitroxClient/obj/Debug/net10.0/ref/NitroxClient.dll
+ NitroxPatcher/obj/Debug/net10.0/ref/NitroxPatcher.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net10.0/Nitrox.Test.GeneratedMSBuildEditorConfig.editorconfig

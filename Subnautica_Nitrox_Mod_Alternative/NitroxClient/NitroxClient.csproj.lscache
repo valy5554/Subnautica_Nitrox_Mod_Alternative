@@ -1,0 +1,1226 @@
+version=1
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+language=C#
+lastDtbSucceeded
+
+[sliceDimensions]
+TargetFramework=net10.0
+
+[properties]
+AssemblyName=NitroxClient
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=14.0
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=NitroxClient
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>bin/Debug/net10.0/NitroxClient.dll
+TargetRefPath=<PATH>obj/Debug/net10.0/ref/NitroxClient.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:1
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../NitroxClient=NitroxClient
+/out:obj\Debug\net10.0\NitroxClient.dll
+/refout:obj\Debug\net10.0\refint\NitroxClient.dll
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+ClientAutoFacRegistrar.cs
+Communication/Abstract/
+ IClient.cs
+ IMultiplayerSession.cs
+ IMultiplayerSessionConnectionContext.cs
+ IMultiplayerSessionConnectionState.cs
+ IMultiplayerSessionState.cs
+ IPacketSender.cs
+Communication/
+ Exceptions/ClientConnectionFailedException.cs
+ LANBroadcastClient.cs
+ MultiplayerSession/ConnectionState/
+  AwaitingReservationCredentials.cs
+  AwaitingSessionReservation.cs
+  CommunicatingState.cs
+  ConnectionNegotiatedState.cs
+  ConnectionNegotiatingState.cs
+  Disconnected.cs
+  EstablishingSessionPolicy.cs
+  SessionJoined.cs
+  SessionReservationRejected.cs
+  SessionReserved.cs
+ MultiplayerSession/
+  MultiplayerSessionConnectionStage.cs
+  MultiplayerSessionManager.cs
+ NetworkingLayer/LiteNetLib/
+  ClockSyncProcedure.cs
+  LiteNetLibClient.cs
+ PacketReceiver.cs
+ Packets/Processors/
+  AggressiveWhenSeeTargetChangedProcessor.cs
+  AnimationChangeEventProcessor.cs
+  AttackCyclopsTargetChangedProcessor.cs
+  AuroraAndTimeUpdateProcessor.cs
+  BenchChangedProcessor.cs
+  BuildingDesyncWarningProcessor.cs
+  BuildingResyncProcessor.cs
+  BuildProcessor.cs
+  ChatMessageProcessor.cs
+  CoffeeMachineUseProcessor.cs
+  Core/
+   ClientProcessorContext.cs
+   IClientPacketProcessor.cs
+  CreatureActionProcessor.cs
+  CreaturePoopPerformedProcessor.cs
+  CyclopsDamagePointHealthChangedProcessor.cs
+  CyclopsDamageProcessor.cs
+  CyclopsDecoyLaunchProcessor.cs
+  CyclopsFireCreatedProcessor.cs
+  CyclopsFireSuppressionProcessor.cs
+  CyclopsRuntimeStateProcessor.cs
+  DebugStartMapProcessor.cs
+  DeconstructionBeginProcessor.cs
+  DisconnectProcessor.cs
+  DiscordRequestIPProcessor.cs
+  DropSimulationOwnershipProcessor.cs
+  EntityDestroyedProcessor.cs
+  EntityMetadataUpdateProcessor.cs
+  EntityReparentedProcessor.cs
+  EntityTransformUpdatesProcessor.cs
+  EscapePodChangedProcessor.cs
+  ExosuitArmActionProcessor.cs
+  FastCheatChangedProcessor.cs
+  FireDousedProcessor.cs
+  FMODAssetProcessor.cs
+  FMODCustomEmitterProcessor.cs
+  FMODCustomLoopingEmitterProcessor.cs
+  FMODEventInstanceProcessor.cs
+  FMODStudioEventEmitterProcessor.cs
+  FootstepPacketProcessor.cs
+  GameModeChangedProcessor.cs
+  GrapplingHookMovementProcessor.cs
+  InitialPlayerSyncProcessor.cs
+  ItemPositionProcessor.cs
+  JoinQueueInfoProcessor.cs
+  KeepInventoryChangedProcessor.cs
+  KnownTechEntryAddProcessor.cs
+  LeakRepairedProcessor.cs
+  MedicalCabinetClickedProcessor.cs
+  MultiplayerSessionPolicyProcessor.cs
+  MultiplayerSessionReservationProcessor.cs
+  MutePlayerProcessor.cs
+  OpenableStateChangedProcessor.cs
+  PDAEncyclopediaEntryAddProcessor.cs
+  PDALogEntryAddProcessor.cs
+  PDAScanFinishedProcessor.cs
+  PermsChangedProcessor.cs
+  PlayerCinematicControllerCallProcessor.cs
+  PlayerDeathProcessor.cs
+  PlayerHeldItemChangedProcessor.cs
+  PlayerInCyclopsMovementProcessor.cs
+  PlayerJoinedMultiplayerSessionProcessor.cs
+  PlayerKickedProcessor.cs
+  PlayerMovementProcessor.cs
+  PlayerStatsProcessor.cs
+  PlayerTeleportedProcessor.cs
+  PlaySunbeamEventProcessor.cs
+  PvPAttackProcessor.cs
+  RadioPlayPendingMessageProcessor.cs
+  RangedAttackLastTargetUpdateProcessor.cs
+  RemoveCreatureCorpseProcessor.cs
+  RocketLaunchProcessor.cs
+  ScheduleProcessor.cs
+  SeaDragonAttackTargetProcessor.cs
+  SeaDragonGrabExosuitProcessor.cs
+  SeaDragonSwatAttackProcessor.cs
+  SeamothModuleActionProcessor.cs
+  SeaTreaderChunkPickedUpProcessor.cs
+  SeaTreaderSpawnedChunkProcessor.cs
+  ServerStoppedProcessor.cs
+  SetIntroCinematicModeProcessor.cs
+  SimulationOwnershipChangeProcessor.cs
+  SimulationOwnershipResponseProcessor.cs
+  SleepCompleteProcessor.cs
+  SleepStatusUpdateProcessor.cs
+  SpawnEntitiesProcessor.cs
+  StasisSphereHitProcessor.cs
+  StasisSphereShotProcessor.cs
+  StoryGoalExecutedClientProcessor.cs
+  SubRootChangedProcessor.cs
+  TextAutoCompleteProcessor.cs
+  TimeChangeProcessor.cs
+  ToggleLightsProcessor.cs
+  TorpedoHitProcessor.cs
+  TorpedoShotProcessor.cs
+  TorpedoTargetAcquiredProcessor.cs
+  VehicleDockingProcessor.cs
+  VehicleMovementsProcessor.cs
+  VehicleOnPilotModeChangedProcessor.cs
+  VehicleUndockingProcessor.cs
+  WeldActionProcessor.cs
+ PacketSuppressor.cs
+Debuggers/
+ AbstractDebugger.cs
+ Drawer/
+  DrawerManager.cs
+  IDrawer.cs
+  IEditorDrawer.cs
+  Nitrox/NitroxEntityDrawer.cs
+  NitroxGUILayout.cs
+  Subnautica/
+   FMODAssetDrawer.cs
+   UWEEventDrawer.cs
+  Unity/
+   BoxColliderDrawer.cs
+   CharacterControllerDrawer.cs
+   ColorDrawer.cs
+   FixedJointDrawer.cs
+   MaterialDrawer.cs
+   RectDrawer.cs
+   RigidbodyDrawer.cs
+   TransformDrawer.cs
+   UnityEventDrawer.cs
+   VectorDrawer.cs
+   VFXControllerDrawer.cs
+  UnityUI/
+   AnimatorDrawer.cs
+   AspectRatioFitterDrawer.cs
+   ButtonDrawer.cs
+   CanvasDrawer.cs
+   CanvasGroupDrawer.cs
+   CanvasRendererDrawer.cs
+   CanvasScalerDrawer.cs
+   ContentSizeFitterDrawer.cs
+   DropdownDrawer.cs
+   EventTriggerDrawer.cs
+   GraphicRaycasterDrawer.cs
+   GridLayoutGroupDrawer.cs
+   ImageDrawer.cs
+   InputFieldDrawer.cs
+   LayoutElementDrawer.cs
+   LayoutGroupDrawer.cs
+   MaskDrawer.cs
+   RectTransformDrawer.cs
+   ScrollbarDrawer.cs
+   ScrollRectDrawer.cs
+   SelectableDrawer.cs
+   SliderDrawer.cs
+   TextDrawer.cs
+   ToggleDrawer.cs
+   ToggleGroupDrawer.cs
+ EntityDebugger.cs
+ NetworkDebugger.cs
+ SceneDebugger.cs
+ SceneExtraDebugger.cs
+ SoundDebugger.cs
+Extensions/
+ CoroutineExtensions.cs
+ GameObjectExtensions.cs
+ GameObjectReferenceHolderExtensions.cs
+ NitroxEntityExtensions.cs
+ PlanterExtensions.cs
+ RendererExtensions.cs
+ StringExtensions.cs
+ UnityObjectExtensions.cs
+ VFXConstructingExtensions.cs
+GameLogic/
+ AI.cs
+ Bases/
+  BuildingHandler.cs
+  BuildUtils.cs
+  GhostMetadataApplier.cs
+  GhostMetadataRetriever.cs
+  OperationTracker.cs
+ BulletManager.cs
+ ChatUI/
+  ChatLogEntry.cs
+  PlayerChatManager.cs
+ CorrectedTimeManager.cs
+ Cyclops.cs
+ CyclopsPawn.cs
+ Entities.cs
+ EquipmentSlots.cs
+ ExosuitModuleEvent.cs
+ Fires.cs
+ FMOD/
+  FMODSoundSuppressor.cs
+  FMODSystem.cs
+ Helper/
+  BaseSerializationHelper.cs
+  BatteryChildEntityHelper.cs
+  EquipmentHelper.cs
+  InventoryContainerHelper.cs
+  TransientLocalObjectManager.cs
+  VehicleChildEntityHelper.cs
+ HUD/
+  Components/ButtonTooltip.cs
+  NitroxPDATab.cs
+  NitroxPDATabManager.cs
+  PdaTabs/
+   uGUI_PlayerListTab.cs
+   uGUI_PlayerPingEntry.cs
+  PlayerListTab.cs
+  PlayerVitalsManager.cs
+ InitialSync/Abstract/
+  IInitialSyncProcessor.cs
+  InitialSyncProcessor.cs
+ InitialSync/
+  ClockSyncInitialSyncProcessor.cs
+  EquippedItemInitialSyncProcessor.cs
+  GlobalRootInitialSyncProcessor.cs
+  PdaInitialSyncProcessor.cs
+  PlayerInitialSyncProcessor.cs
+  PlayerPositionInitialSyncProcessor.cs
+  PlayerPreferencesInitialSyncProcessor.cs
+  QuickSlotInitialSyncProcessor.cs
+  RemotePlayerInitialSyncProcessor.cs
+  SimulationOwnershipInitialSyncProcessor.cs
+  StoryGoalInitialSyncProcessor.cs
+ Interior.cs
+ ItemContainers.cs
+ Items.cs
+ LiveMixinManager.cs
+ LocalPlayer.cs
+ MedkitFabricator.cs
+ MobileVehicleBay.cs
+ MovementHelper.cs
+ NitroxConsole.cs
+ PlayerLogic/
+  PlayerCinematics.cs
+  PlayerModel/Abstract/
+   IColorSwapManager.cs
+   IColorSwapStrategy.cs
+   ILocalNitroxPlayer.cs
+   INitroxPlayer.cs
+   IPlayerModelBuilder.cs
+  PlayerModel/ColorSwap/
+   ColorSwapAsyncOperation.cs
+   ColorValueRange.cs
+   DiveSuitColorSwapManager.cs
+   FinColorSwapManager.cs
+   HsvSwapper.cs
+   RadiationHelmetColorSwapManager.cs
+   RadiationSuitColorSwapManager.cs
+   RadiationSuitVestColorSwapManager.cs
+   RadiationTankColorSwapManager.cs
+   RebreatherColorSwapManager.cs
+   ReinforcedSuitColorSwapManager.cs
+   ScubaTankColorSwapManager.cs
+   StillSuitColorSwapManager.cs
+   Strategy/
+    AlphaChannelSwapper.cs
+    HueSaturationVibrancySwapper.cs
+    HueSwapper.cs
+   TextureBlock.cs
+  PlayerModel/Equipment/
+   Abstract/IEquipmentVisibilityHandler.cs
+   DiveSuitVisibilityHandler.cs
+   FinsVisibilityHandler.cs
+   RadiationSuitVisibilityHandler.cs
+   ReinforcedSuitVisibilityHandler.cs
+   ScubaSuitVisibiliyHandler.cs
+   StillSuitVisibilityHandler.cs
+  PlayerModel/
+   PlayerEquipmentConstants.cs
+   PlayerModelManager.cs
+  PlayerPreferences/
+   IPreferenceStateProvider.cs
+   PlayerPreference.cs
+   PlayerPreferenceManager.cs
+   PlayerPreferenceState.cs
+   UnityPreferenceStateProvider.cs
+  RemotePlayerIdentifier.cs
+ PlayerManager.cs
+ RemotePlayer.cs
+ Rockets.cs
+ SeamothModulesEvent.cs
+ Settings/
+  NitroxPrefs.cs
+  NitroxSettingsManager.cs
+ Simulation/
+  HandInteraction.cs
+  LockRequest.cs
+  LockRequestBase.cs
+  LockRequestContext.cs
+  PropulsionGrab.cs
+ SimulationOwnership.cs
+ SleepManager.cs
+ Spawning/Abstract/
+  EntitySpawner.cs
+  IEntitySpawner.cs
+  ISyncEntitySpawner.cs
+  SyncEntitySpawner.cs
+ Spawning/Bases/
+  BaseLeakEntitySpawner.cs
+  BuildEntitySpawner.cs
+  BuildingPostSpawner.cs
+  GhostEntitySpawner.cs
+  InteriorPieceEntitySpawner.cs
+  ModuleEntitySpawner.cs
+ Spawning/
+  EscapePodEntitySpawner.cs
+  InstalledBatteryEntitySpawner.cs
+  InstalledModuleEntitySpawner.cs
+  InventoryEntitySpawner.cs
+  InventoryItemEntitySpawner.cs
+  Metadata/
+   BeaconMetadataProcessor.cs
+   EntityMetadataManager.cs
+   Extractor/Abstract/
+    EntityMetadataExtractor.cs
+    IEntityMetadataExtractor.cs
+   Extractor/
+    BatteryMetadataExtractor.cs
+    BeaconMetadataExtractor.cs
+    BlueprintHandTargetMetadataExtractor.cs
+    ConstructorMetadataExtractor.cs
+    CrashHomeMetadataExtractor.cs
+    CyclopsLightingMetadataExtractor.cs
+    CyclopsMetadataExtractor.cs
+    DrillableMetadataExtractor.cs
+    EatableMetadataExtractor.cs
+    EggMetadataExtractor.cs
+    EscapePodMetadataExtractor.cs
+    ExosuitMetadataExtractor.cs
+    FireExtinguisherHolderMetadataExtractor.cs
+    FlareMetadataExtractor.cs
+    FlashlightMetadataExtractor.cs
+    FruitPlantMetadataExtractor.cs
+    GenericConsoleMetadataExtractor.cs
+    PlantableMetadataExtractor.cs
+    PlayerMetadataExtractor.cs
+    PrecursorComputerTerminalMetadataExtractor.cs
+    PrecursorDisableGunTerminalMetadataExtractor.cs
+    RadiationMetadataExtractor.cs
+    RocketMetadataExtractor.cs
+    SealedDoorMetadataExtractor.cs
+    SeamothMetadataExtractor.cs
+    SeaTreaderMetadataExtractor.cs
+    SubNameInputMetadataExtractor.cs
+    WaterParkCreatureMetadataExtractor.cs
+   FlareMetadataProcessor.cs
+   Processor/Abstract/
+    EntityMetadataProcessor.cs
+    IEntityMetadataProcessor.cs
+    VehicleMetadataProcessor.cs
+   Processor/
+    BatteryMetadataProcessor.cs
+    BlueprintHandTargetMetadataProcessor.cs
+    ConstructorMetadataProcessor.cs
+    CrafterMetadataProcessor.cs
+    CrashHomeMetadataProcessor.cs
+    CyclopsLightingMetadataProcessor.cs
+    CyclopsMetadataProcessor.cs
+    DrillableMetadataProcessor.cs
+    EatableMetadataProcessor.cs
+    EggMetadataProcessor.cs
+    EntitySignMetadataProcessor.cs
+    EscapePodMetadataProcessor.cs
+    ExosuitMetadataProcessor.cs
+    FireExtinguisherHolderMetadataProcessor.cs
+    FlashlightMetadataProcessor.cs
+    FruitPlantMetadataProcessor.cs
+    GenericConsoleMetadataProcessor.cs
+    IncubatorMetadataProcessor.cs
+    KeypadMetadataProcessor.cs
+    PlantableMetadataProcessor.cs
+    PlayerMetadataProcessor.cs
+    PrecursorComputerTerminalMetadataProcessor.cs
+    PrecursorDisableGunTerminalMetadataProcessor.cs
+    PrecursorDoorwayMetadataProcessor.cs
+    PrecursorKeyTerminalMetadataProcessor.cs
+    PrecursorTeleporterActivationTerminalMetadataProcessor.cs
+    PrecursorTeleporterMetadataProcessor.cs
+    RadiationMetadataProcessor.cs
+    RocketMetadataProcessor.cs
+    SealedDoorMetadataProcessor.cs
+    SeamothMetadataProcessor.cs
+    SeaTreaderMetadataProcessor.cs
+    StarshipDoorMetadataProcessor.cs
+    StayAtLeashPositionMetadataProcessor.cs
+    SubNameInputMetadataProcessor.cs
+    WaterParkCreatureMetadataProcessor.cs
+    WeldableWallPanelGenericMetadataProcessor.cs
+  PathBasedChildEntitySpawner.cs
+  PrefabChildEntitySpawner.cs
+  WorldEntities/
+   CrashEntitySpawner.cs
+   CreatureRespawnEntitySpawner.cs
+   CreepvineEntitySpawner.cs
+   DefaultWorldEntitySpawner.cs
+   GeyserWorldEntitySpawner.cs
+   GlobalRootEntitySpawner.cs
+   IWorldEntitySpawner.cs
+   IWorldEntitySyncSpawner.cs
+   OxygenPipeEntitySpawner.cs
+   PlacedWorldEntitySpawner.cs
+   PlaceholderGroupWorldEntitySpawner.cs
+   PlayerEntitySpawner.cs
+   PrefabPlaceholderEntitySpawner.cs
+   RadiationLeakEntitySpawner.cs
+   ReefbackChildEntitySpawner.cs
+   ReefbackEntitySpawner.cs
+   SerializedWorldEntitySpawner.cs
+   VehicleEntitySpawner.cs
+   WorldEntitySpawnerResolver.cs
+  WorldEntitySpawner.cs
+ StoryManager.cs
+ Terrain.cs
+ TimeManager.cs
+ Vehicles.cs
+GlobalUsings.cs
+Helpers/
+ NitroxProtobufSerializer.cs
+ ThrottledPacketSender.cs
+MonoBehaviours/
+ AnimationController.cs
+ BaseLeakManager.cs
+ CinematicController/
+  MultiplayerCinematicController.cs
+  MultiplayerCinematicReference.cs
+  RemotePlayerCinematicController.cs
+ Cyclops/
+  CyclopsMotor.cs
+  CyclopsMotorGroundChecker.cs
+  NitroxCyclops.cs
+  TriggerWorkaround.cs
+  VirtualCyclops.cs
+ Discord/
+  DiscordClient.cs
+  DiscordJoinRequestGui.cs
+ EntityPositionBroadcaster.cs
+ FMODEmitterController.cs
+ Gui/Chat/
+  PlayerChat.cs
+  PlayerChatInputField.cs
+  PlayerChatLogItem.cs
+  PlayerChatPinButton.cs
+ Gui/HUD/
+  DenyOwnershipHand.cs
+  RemotePlayerVitals.cs
+ Gui/
+  InGame/TopRightWatermarkText.cs
+  Input/
+   KeyBindingManager.cs
+   KeyBindings/Actions/
+    ChatKeyBindingAction.cs
+    DiscordFocusBindingAction.cs
+   KeyBindings/KeyBinding.cs
+  MainMenu/
+   MainMenuNotificationPanel.cs
+   NitroxMainMenuModifications.cs
+   ServerJoin/
+    JoinServerBackend.cs
+    MainMenuColorPickerPreview.cs
+    MainMenuEnterPasswordPanel.cs
+    MainMenuJoinServerPanel.cs
+   ServersList/
+    MainMenuCreateServerPanel.cs
+    MainMenuDeleteServer.cs
+    MainMenuServerButton.cs
+    MainMenuServerListPanel.cs
+  Modals/
+   ConfirmModal.cs
+   InfoModal.cs
+   KickedModal.cs
+   LostConnectionModal.cs
+   Modal.cs
+   ServerStoppedModal.cs
+ IntroCinematicUpdater.cs
+ MoonpoolManager.cs
+ MovementBroadcaster.cs
+ MovementReplicator.cs
+ Multiplayer.cs
+ MultiplayerVehicleControl.cs
+ NitroxBootstrapper.cs
+ NitroxDebugManager.cs
+ NitroxEntity.cs
+ NitroxGeyser.cs
+ OutOfCellEntity.cs
+ Overrides/MultiplayerBench.cs
+ PlayerDeathBroadcaster.cs
+ PlayerMovementBroadcaster.cs
+ PlayerStatsBroadcaster.cs
+ PrecursorTracker.cs
+ ReferenceHolder.cs
+ RemotelyControlled.cs
+ RemotelyControlledPipeFloater.cs
+ RemotePlayerBenchBlocker.cs
+ UnderwaterStateTracker.cs
+ Vehicles/
+  CyclopsMovementReplicator.cs
+  ExosuitMovementReplicator.cs
+  SeaMothMovementReplicator.cs
+  VehicleMovementReplicator.cs
+  WatchedEntry.cs
+Properties/AssemblyInfo.cs
+Unity/Helper/
+ AssetBundleLoader.cs
+ DebugUtils.cs
+ GUISkinUtils.cs
+ MathUtil.cs
+ Yielders.cs
+Unity/Smoothing/
+ SmoothParameter.cs
+ SmoothRotation.cs
+ SmoothVector.cs
+
+[metadataReferences]
+../
+ Nitrox.Model.Subnautica/obj/Debug/net10.0/ref/Nitrox.Model.Subnautica.dll
+ Nitrox.Model/obj/Debug/net10.0/ref/Nitrox.Model.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net10.0/NitroxClient.GeneratedMSBuildEditorConfig.editorconfig
+
+---
+
+[project]
+language=C#
+primary
+lastDtbSucceeded
+
+[sliceDimensions]
+TargetFramework=net472
+
+[properties]
+AssemblyName=NitroxClient
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=7.3
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=NitroxClient
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>bin/Debug/net472/NitroxClient.dll
+TargetRefPath=
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:4
+/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../NitroxClient=NitroxClient
+/out:obj\Debug\net472\NitroxClient.dll
+/subsystemversion:6.00
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+ClientAutoFacRegistrar.cs
+Communication/Abstract/
+ IClient.cs
+ IMultiplayerSession.cs
+ IMultiplayerSessionConnectionContext.cs
+ IMultiplayerSessionConnectionState.cs
+ IMultiplayerSessionState.cs
+ IPacketSender.cs
+Communication/
+ Exceptions/ClientConnectionFailedException.cs
+ LANBroadcastClient.cs
+ MultiplayerSession/ConnectionState/
+  AwaitingReservationCredentials.cs
+  AwaitingSessionReservation.cs
+  CommunicatingState.cs
+  ConnectionNegotiatedState.cs
+  ConnectionNegotiatingState.cs
+  Disconnected.cs
+  EstablishingSessionPolicy.cs
+  SessionJoined.cs
+  SessionReservationRejected.cs
+  SessionReserved.cs
+ MultiplayerSession/
+  MultiplayerSessionConnectionStage.cs
+  MultiplayerSessionManager.cs
+ NetworkingLayer/LiteNetLib/
+  ClockSyncProcedure.cs
+  LiteNetLibClient.cs
+ PacketReceiver.cs
+ Packets/Processors/
+  AggressiveWhenSeeTargetChangedProcessor.cs
+  AnimationChangeEventProcessor.cs
+  AttackCyclopsTargetChangedProcessor.cs
+  AuroraAndTimeUpdateProcessor.cs
+  BenchChangedProcessor.cs
+  BuildingDesyncWarningProcessor.cs
+  BuildingResyncProcessor.cs
+  BuildProcessor.cs
+  ChatMessageProcessor.cs
+  CoffeeMachineUseProcessor.cs
+  Core/
+   ClientProcessorContext.cs
+   IClientPacketProcessor.cs
+  CreatureActionProcessor.cs
+  CreaturePoopPerformedProcessor.cs
+  CyclopsDamagePointHealthChangedProcessor.cs
+  CyclopsDamageProcessor.cs
+  CyclopsDecoyLaunchProcessor.cs
+  CyclopsFireCreatedProcessor.cs
+  CyclopsFireSuppressionProcessor.cs
+  CyclopsRuntimeStateProcessor.cs
+  DebugStartMapProcessor.cs
+  DeconstructionBeginProcessor.cs
+  DisconnectProcessor.cs
+  DiscordRequestIPProcessor.cs
+  DropSimulationOwnershipProcessor.cs
+  EntityDestroyedProcessor.cs
+  EntityMetadataUpdateProcessor.cs
+  EntityReparentedProcessor.cs
+  EntityTransformUpdatesProcessor.cs
+  EscapePodChangedProcessor.cs
+  ExosuitArmActionProcessor.cs
+  FastCheatChangedProcessor.cs
+  FireDousedProcessor.cs
+  FMODAssetProcessor.cs
+  FMODCustomEmitterProcessor.cs
+  FMODCustomLoopingEmitterProcessor.cs
+  FMODEventInstanceProcessor.cs
+  FMODStudioEventEmitterProcessor.cs
+  FootstepPacketProcessor.cs
+  GameModeChangedProcessor.cs
+  GrapplingHookMovementProcessor.cs
+  InitialPlayerSyncProcessor.cs
+  ItemPositionProcessor.cs
+  JoinQueueInfoProcessor.cs
+  KeepInventoryChangedProcessor.cs
+  KnownTechEntryAddProcessor.cs
+  LeakRepairedProcessor.cs
+  MedicalCabinetClickedProcessor.cs
+  MultiplayerSessionPolicyProcessor.cs
+  MultiplayerSessionReservationProcessor.cs
+  MutePlayerProcessor.cs
+  OpenableStateChangedProcessor.cs
+  PDAEncyclopediaEntryAddProcessor.cs
+  PDALogEntryAddProcessor.cs
+  PDAScanFinishedProcessor.cs
+  PermsChangedProcessor.cs
+  PlayerCinematicControllerCallProcessor.cs
+  PlayerDeathProcessor.cs
+  PlayerHeldItemChangedProcessor.cs
+  PlayerInCyclopsMovementProcessor.cs
+  PlayerJoinedMultiplayerSessionProcessor.cs
+  PlayerKickedProcessor.cs
+  PlayerMovementProcessor.cs
+  PlayerStatsProcessor.cs
+  PlayerTeleportedProcessor.cs
+  PlaySunbeamEventProcessor.cs
+  PvPAttackProcessor.cs
+  RadioPlayPendingMessageProcessor.cs
+  RangedAttackLastTargetUpdateProcessor.cs
+  RemoveCreatureCorpseProcessor.cs
+  RocketLaunchProcessor.cs
+  ScheduleProcessor.cs
+  SeaDragonAttackTargetProcessor.cs
+  SeaDragonGrabExosuitProcessor.cs
+  SeaDragonSwatAttackProcessor.cs
+  SeamothModuleActionProcessor.cs
+  SeaTreaderChunkPickedUpProcessor.cs
+  SeaTreaderSpawnedChunkProcessor.cs
+  ServerStoppedProcessor.cs
+  SetIntroCinematicModeProcessor.cs
+  SimulationOwnershipChangeProcessor.cs
+  SimulationOwnershipResponseProcessor.cs
+  SleepCompleteProcessor.cs
+  SleepStatusUpdateProcessor.cs
+  SpawnEntitiesProcessor.cs
+  StasisSphereHitProcessor.cs
+  StasisSphereShotProcessor.cs
+  StoryGoalExecutedClientProcessor.cs
+  SubRootChangedProcessor.cs
+  TextAutoCompleteProcessor.cs
+  TimeChangeProcessor.cs
+  ToggleLightsProcessor.cs
+  TorpedoHitProcessor.cs
+  TorpedoShotProcessor.cs
+  TorpedoTargetAcquiredProcessor.cs
+  VehicleDockingProcessor.cs
+  VehicleMovementsProcessor.cs
+  VehicleOnPilotModeChangedProcessor.cs
+  VehicleUndockingProcessor.cs
+  WeldActionProcessor.cs
+ PacketSuppressor.cs
+Debuggers/
+ AbstractDebugger.cs
+ Drawer/
+  DrawerManager.cs
+  IDrawer.cs
+  IEditorDrawer.cs
+  Nitrox/NitroxEntityDrawer.cs
+  NitroxGUILayout.cs
+  Subnautica/
+   FMODAssetDrawer.cs
+   UWEEventDrawer.cs
+  Unity/
+   BoxColliderDrawer.cs
+   CharacterControllerDrawer.cs
+   ColorDrawer.cs
+   FixedJointDrawer.cs
+   MaterialDrawer.cs
+   RectDrawer.cs
+   RigidbodyDrawer.cs
+   TransformDrawer.cs
+   UnityEventDrawer.cs
+   VectorDrawer.cs
+   VFXControllerDrawer.cs
+  UnityUI/
+   AnimatorDrawer.cs
+   AspectRatioFitterDrawer.cs
+   ButtonDrawer.cs
+   CanvasDrawer.cs
+   CanvasGroupDrawer.cs
+   CanvasRendererDrawer.cs
+   CanvasScalerDrawer.cs
+   ContentSizeFitterDrawer.cs
+   DropdownDrawer.cs
+   EventTriggerDrawer.cs
+   GraphicRaycasterDrawer.cs
+   GridLayoutGroupDrawer.cs
+   ImageDrawer.cs
+   InputFieldDrawer.cs
+   LayoutElementDrawer.cs
+   LayoutGroupDrawer.cs
+   MaskDrawer.cs
+   RectTransformDrawer.cs
+   ScrollbarDrawer.cs
+   ScrollRectDrawer.cs
+   SelectableDrawer.cs
+   SliderDrawer.cs
+   TextDrawer.cs
+   ToggleDrawer.cs
+   ToggleGroupDrawer.cs
+ EntityDebugger.cs
+ NetworkDebugger.cs
+ SceneDebugger.cs
+ SceneExtraDebugger.cs
+ SoundDebugger.cs
+Extensions/
+ CoroutineExtensions.cs
+ GameObjectExtensions.cs
+ GameObjectReferenceHolderExtensions.cs
+ NitroxEntityExtensions.cs
+ PlanterExtensions.cs
+ RendererExtensions.cs
+ StringExtensions.cs
+ UnityObjectExtensions.cs
+ VFXConstructingExtensions.cs
+GameLogic/
+ AI.cs
+ Bases/
+  BuildingHandler.cs
+  BuildUtils.cs
+  GhostMetadataApplier.cs
+  GhostMetadataRetriever.cs
+  OperationTracker.cs
+ BulletManager.cs
+ ChatUI/
+  ChatLogEntry.cs
+  PlayerChatManager.cs
+ CorrectedTimeManager.cs
+ Cyclops.cs
+ CyclopsPawn.cs
+ Entities.cs
+ EquipmentSlots.cs
+ ExosuitModuleEvent.cs
+ Fires.cs
+ FMOD/
+  FMODSoundSuppressor.cs
+  FMODSystem.cs
+ Helper/
+  BaseSerializationHelper.cs
+  BatteryChildEntityHelper.cs
+  EquipmentHelper.cs
+  InventoryContainerHelper.cs
+  TransientLocalObjectManager.cs
+  VehicleChildEntityHelper.cs
+ HUD/
+  Components/ButtonTooltip.cs
+  NitroxPDATab.cs
+  NitroxPDATabManager.cs
+  PdaTabs/
+   uGUI_PlayerListTab.cs
+   uGUI_PlayerPingEntry.cs
+  PlayerListTab.cs
+  PlayerVitalsManager.cs
+ InitialSync/Abstract/
+  IInitialSyncProcessor.cs
+  InitialSyncProcessor.cs
+ InitialSync/
+  ClockSyncInitialSyncProcessor.cs
+  EquippedItemInitialSyncProcessor.cs
+  GlobalRootInitialSyncProcessor.cs
+  PdaInitialSyncProcessor.cs
+  PlayerInitialSyncProcessor.cs
+  PlayerPositionInitialSyncProcessor.cs
+  PlayerPreferencesInitialSyncProcessor.cs
+  QuickSlotInitialSyncProcessor.cs
+  RemotePlayerInitialSyncProcessor.cs
+  SimulationOwnershipInitialSyncProcessor.cs
+  StoryGoalInitialSyncProcessor.cs
+ Interior.cs
+ ItemContainers.cs
+ Items.cs
+ LiveMixinManager.cs
+ LocalPlayer.cs
+ MedkitFabricator.cs
+ MobileVehicleBay.cs
+ MovementHelper.cs
+ NitroxConsole.cs
+ PlayerLogic/
+  PlayerCinematics.cs
+  PlayerModel/Abstract/
+   IColorSwapManager.cs
+   IColorSwapStrategy.cs
+   ILocalNitroxPlayer.cs
+   INitroxPlayer.cs
+   IPlayerModelBuilder.cs
+  PlayerModel/ColorSwap/
+   ColorSwapAsyncOperation.cs
+   ColorValueRange.cs
+   DiveSuitColorSwapManager.cs
+   FinColorSwapManager.cs
+   HsvSwapper.cs
+   RadiationHelmetColorSwapManager.cs
+   RadiationSuitColorSwapManager.cs
+   RadiationSuitVestColorSwapManager.cs
+   RadiationTankColorSwapManager.cs
+   RebreatherColorSwapManager.cs
+   ReinforcedSuitColorSwapManager.cs
+   ScubaTankColorSwapManager.cs
+   StillSuitColorSwapManager.cs
+   Strategy/
+    AlphaChannelSwapper.cs
+    HueSaturationVibrancySwapper.cs
+    HueSwapper.cs
+   TextureBlock.cs
+  PlayerModel/Equipment/
+   Abstract/IEquipmentVisibilityHandler.cs
+   DiveSuitVisibilityHandler.cs
+   FinsVisibilityHandler.cs
+   RadiationSuitVisibilityHandler.cs
+   ReinforcedSuitVisibilityHandler.cs
+   ScubaSuitVisibiliyHandler.cs
+   StillSuitVisibilityHandler.cs
+  PlayerModel/
+   PlayerEquipmentConstants.cs
+   PlayerModelManager.cs
+  PlayerPreferences/
+   IPreferenceStateProvider.cs
+   PlayerPreference.cs
+   PlayerPreferenceManager.cs
+   PlayerPreferenceState.cs
+   UnityPreferenceStateProvider.cs
+  RemotePlayerIdentifier.cs
+ PlayerManager.cs
+ RemotePlayer.cs
+ Rockets.cs
+ SeamothModulesEvent.cs
+ Settings/
+  NitroxPrefs.cs
+  NitroxSettingsManager.cs
+ Simulation/
+  HandInteraction.cs
+  LockRequest.cs
+  LockRequestBase.cs
+  LockRequestContext.cs
+  PropulsionGrab.cs
+ SimulationOwnership.cs
+ SleepManager.cs
+ Spawning/Abstract/
+  EntitySpawner.cs
+  IEntitySpawner.cs
+  ISyncEntitySpawner.cs
+  SyncEntitySpawner.cs
+ Spawning/Bases/
+  BaseLeakEntitySpawner.cs
+  BuildEntitySpawner.cs
+  BuildingPostSpawner.cs
+  GhostEntitySpawner.cs
+  InteriorPieceEntitySpawner.cs
+  ModuleEntitySpawner.cs
+ Spawning/
+  EscapePodEntitySpawner.cs
+  InstalledBatteryEntitySpawner.cs
+  InstalledModuleEntitySpawner.cs
+  InventoryEntitySpawner.cs
+  InventoryItemEntitySpawner.cs
+  Metadata/
+   BeaconMetadataProcessor.cs
+   EntityMetadataManager.cs
+   Extractor/Abstract/
+    EntityMetadataExtractor.cs
+    IEntityMetadataExtractor.cs
+   Extractor/
+    BatteryMetadataExtractor.cs
+    BeaconMetadataExtractor.cs
+    BlueprintHandTargetMetadataExtractor.cs
+    ConstructorMetadataExtractor.cs
+    CrashHomeMetadataExtractor.cs
+    CyclopsLightingMetadataExtractor.cs
+    CyclopsMetadataExtractor.cs
+    DrillableMetadataExtractor.cs
+    EatableMetadataExtractor.cs
+    EggMetadataExtractor.cs
+    EscapePodMetadataExtractor.cs
+    ExosuitMetadataExtractor.cs
+    FireExtinguisherHolderMetadataExtractor.cs
+    FlareMetadataExtractor.cs
+    FlashlightMetadataExtractor.cs
+    FruitPlantMetadataExtractor.cs
+    GenericConsoleMetadataExtractor.cs
+    PlantableMetadataExtractor.cs
+    PlayerMetadataExtractor.cs
+    PrecursorComputerTerminalMetadataExtractor.cs
+    PrecursorDisableGunTerminalMetadataExtractor.cs
+    RadiationMetadataExtractor.cs
+    RocketMetadataExtractor.cs
+    SealedDoorMetadataExtractor.cs
+    SeamothMetadataExtractor.cs
+    SeaTreaderMetadataExtractor.cs
+    SubNameInputMetadataExtractor.cs
+    WaterParkCreatureMetadataExtractor.cs
+   FlareMetadataProcessor.cs
+   Processor/Abstract/
+    EntityMetadataProcessor.cs
+    IEntityMetadataProcessor.cs
+    VehicleMetadataProcessor.cs
+   Processor/
+    BatteryMetadataProcessor.cs
+    BlueprintHandTargetMetadataProcessor.cs
+    ConstructorMetadataProcessor.cs
+    CrafterMetadataProcessor.cs
+    CrashHomeMetadataProcessor.cs
+    CyclopsLightingMetadataProcessor.cs
+    CyclopsMetadataProcessor.cs
+    DrillableMetadataProcessor.cs
+    EatableMetadataProcessor.cs
+    EggMetadataProcessor.cs
+    EntitySignMetadataProcessor.cs
+    EscapePodMetadataProcessor.cs
+    ExosuitMetadataProcessor.cs
+    FireExtinguisherHolderMetadataProcessor.cs
+    FlashlightMetadataProcessor.cs
+    FruitPlantMetadataProcessor.cs
+    GenericConsoleMetadataProcessor.cs
+    IncubatorMetadataProcessor.cs
+    KeypadMetadataProcessor.cs
+    PlantableMetadataProcessor.cs
+    PlayerMetadataProcessor.cs
+    PrecursorComputerTerminalMetadataProcessor.cs
+    PrecursorDisableGunTerminalMetadataProcessor.cs
+    PrecursorDoorwayMetadataProcessor.cs
+    PrecursorKeyTerminalMetadataProcessor.cs
+    PrecursorTeleporterActivationTerminalMetadataProcessor.cs
+    PrecursorTeleporterMetadataProcessor.cs
+    RadiationMetadataProcessor.cs
+    RocketMetadataProcessor.cs
+    SealedDoorMetadataProcessor.cs
+    SeamothMetadataProcessor.cs
+    SeaTreaderMetadataProcessor.cs
+    StarshipDoorMetadataProcessor.cs
+    StayAtLeashPositionMetadataProcessor.cs
+    SubNameInputMetadataProcessor.cs
+    WaterParkCreatureMetadataProcessor.cs
+    WeldableWallPanelGenericMetadataProcessor.cs
+  PathBasedChildEntitySpawner.cs
+  PrefabChildEntitySpawner.cs
+  WorldEntities/
+   CrashEntitySpawner.cs
+   CreatureRespawnEntitySpawner.cs
+   CreepvineEntitySpawner.cs
+   DefaultWorldEntitySpawner.cs
+   GeyserWorldEntitySpawner.cs
+   GlobalRootEntitySpawner.cs
+   IWorldEntitySpawner.cs
+   IWorldEntitySyncSpawner.cs
+   OxygenPipeEntitySpawner.cs
+   PlacedWorldEntitySpawner.cs
+   PlaceholderGroupWorldEntitySpawner.cs
+   PlayerEntitySpawner.cs
+   PrefabPlaceholderEntitySpawner.cs
+   RadiationLeakEntitySpawner.cs
+   ReefbackChildEntitySpawner.cs
+   ReefbackEntitySpawner.cs
+   SerializedWorldEntitySpawner.cs
+   VehicleEntitySpawner.cs
+   WorldEntitySpawnerResolver.cs
+  WorldEntitySpawner.cs
+ StoryManager.cs
+ Terrain.cs
+ TimeManager.cs
+ Vehicles.cs
+GlobalUsings.cs
+Helpers/
+ NitroxProtobufSerializer.cs
+ ThrottledPacketSender.cs
+MonoBehaviours/
+ AnimationController.cs
+ BaseLeakManager.cs
+ CinematicController/
+  MultiplayerCinematicController.cs
+  MultiplayerCinematicReference.cs
+  RemotePlayerCinematicController.cs
+ Cyclops/
+  CyclopsMotor.cs
+  CyclopsMotorGroundChecker.cs
+  NitroxCyclops.cs
+  TriggerWorkaround.cs
+  VirtualCyclops.cs
+ Discord/
+  DiscordClient.cs
+  DiscordJoinRequestGui.cs
+ EntityPositionBroadcaster.cs
+ FMODEmitterController.cs
+ Gui/Chat/
+  PlayerChat.cs
+  PlayerChatInputField.cs
+  PlayerChatLogItem.cs
+  PlayerChatPinButton.cs
+ Gui/HUD/
+  DenyOwnershipHand.cs
+  RemotePlayerVitals.cs
+ Gui/
+  InGame/TopRightWatermarkText.cs
+  Input/
+   KeyBindingManager.cs
+   KeyBindings/Actions/
+    ChatKeyBindingAction.cs
+    DiscordFocusBindingAction.cs
+   KeyBindings/KeyBinding.cs
+  MainMenu/
+   MainMenuNotificationPanel.cs
+   NitroxMainMenuModifications.cs
+   ServerJoin/
+    JoinServerBackend.cs
+    MainMenuColorPickerPreview.cs
+    MainMenuEnterPasswordPanel.cs
+    MainMenuJoinServerPanel.cs
+   ServersList/
+    MainMenuCreateServerPanel.cs
+    MainMenuDeleteServer.cs
+    MainMenuServerButton.cs
+    MainMenuServerListPanel.cs
+  Modals/
+   ConfirmModal.cs
+   InfoModal.cs
+   KickedModal.cs
+   LostConnectionModal.cs
+   Modal.cs
+   ServerStoppedModal.cs
+ IntroCinematicUpdater.cs
+ MoonpoolManager.cs
+ MovementBroadcaster.cs
+ MovementReplicator.cs
+ Multiplayer.cs
+ MultiplayerVehicleControl.cs
+ NitroxBootstrapper.cs
+ NitroxDebugManager.cs
+ NitroxEntity.cs
+ NitroxGeyser.cs
+ OutOfCellEntity.cs
+ Overrides/MultiplayerBench.cs
+ PlayerDeathBroadcaster.cs
+ PlayerMovementBroadcaster.cs
+ PlayerStatsBroadcaster.cs
+ PrecursorTracker.cs
+ ReferenceHolder.cs
+ RemotelyControlled.cs
+ RemotelyControlledPipeFloater.cs
+ RemotePlayerBenchBlocker.cs
+ UnderwaterStateTracker.cs
+ Vehicles/
+  CyclopsMovementReplicator.cs
+  ExosuitMovementReplicator.cs
+  SeaMothMovementReplicator.cs
+  VehicleMovementReplicator.cs
+  WatchedEntry.cs
+Properties/AssemblyInfo.cs
+Unity/Helper/
+ AssetBundleLoader.cs
+ DebugUtils.cs
+ GUISkinUtils.cs
+ MathUtil.cs
+ Yielders.cs
+Unity/Smoothing/
+ SmoothParameter.cs
+ SmoothRotation.cs
+ SmoothVector.cs
+
+[metadataReferences]
+../
+ Nitrox.Model.Subnautica/bin/Debug/net472/Nitrox.Model.Subnautica.dll
+ Nitrox.Model/bin/Debug/net472/Nitrox.Model.dll
+<NETFXREF>/v4.7.2/
+ mscorlib.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net472/NitroxClient.GeneratedMSBuildEditorConfig.editorconfig

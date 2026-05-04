@@ -1,0 +1,415 @@
+version=1
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Nitrox.Server.Subnautica
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=14.0
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=Nitrox.Server.Subnautica
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>bin/Debug/net10.0/Nitrox.Server.Subnautica.dll
+TargetRefPath=<PATH>obj/Debug/net10.0/ref/Nitrox.Server.Subnautica.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:1
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../Nitrox.Server.Subnautica=Nitrox.Server.Subnautica
+/out:obj\Debug\net10.0\Nitrox.Server.Subnautica.dll
+/refout:obj\Debug\net10.0\refint\Nitrox.Server.Subnautica.dll
+/target:exe
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+AssemblyResolver.cs
+Extensions/
+ AssetsFileMetadataExtension.cs
+ AssetTypeValueFieldExtension.cs
+ BufferWriterExtensions.cs
+ ConfigurationBuilderExtensions.cs
+ LoggerExtensions.cs
+ LoggingBuilderExtensions.cs
+ ServerStartOptionsExtensions.cs
+ ServiceCollectionExtensions.cs
+ SubnauticaServerOptionsExtensions.cs
+ ZLoggerFormattableExtensions.cs
+ ZLoggerOptionsExtensions.cs
+GlobalUsings.cs
+Models/Administration/
+ Core/IAdminFeature.cs
+ IKickPlayer.cs
+Models/AppEvents/Core/
+ EventTrigger.cs
+ IEvent.cs
+Models/AppEvents/
+ IHibernate.cs
+ ISaveState.cs
+ ISessionCleaner.cs
+ ISummarize.cs
+ Triggers/
+  AsyncTrigger.cs
+  SequentialEmptyArgsTrigger.cs
+  SequentialTrigger.cs
+Models/Commands/ArgConverters/Core/
+ ConvertResult.cs
+ IArgConverter.cs
+Models/Commands/ArgConverters/
+ PlayerNameToPlayerArgConverter.cs
+ SessionIdToPlayerArgConverter.cs
+ StringToNitroxIdConverter.cs
+ WordToBoolArgConverter.cs
+Models/Commands/
+ AuroraCommand.cs
+ AutosaveCommand.cs
+ BackCommand.cs
+ BroadcastCommand.cs
+ ChangeAdminPasswordCommand.cs
+ ChangeServerGamemodeCommand.cs
+ ChangeServerPasswordCommand.cs
+ ConfigCommand.cs
+ Core/
+  AliasAttribute.cs
+  CommandHandlerEntry.cs
+  CommandOrigin.cs
+  CommandRegistry.cs
+  HostToServerCommandContext.cs
+  ICommandContext.cs
+  ICommandHandler.cs
+  ICommandSubmit.cs
+  PlayerToServerCommandContext.cs
+  RequiresOrigin.cs
+  RequiresPermissionAttribute.cs
+ Debugging/
+  DebugStartMapCommand.cs
+  LoadBatchCommand.cs
+  PlayerCommand.cs
+  SeedNearPositionCommand.cs
+ DeopCommand.cs
+ DirectoryCommand.cs
+ FastCommand.cs
+ GameModeCommand.cs
+ HelpCommand.cs
+ KickCommand.cs
+ ListCommand.cs
+ LoginCommand.cs
+ MuteCommand.cs
+ OpCommand.cs
+ PromoteCommand.cs
+ PvpCommand.cs
+ QueryCommand.cs
+ RestartCommand.cs
+ SaveCommand.cs
+ SetKeepInventoryCommand.cs
+ StopCommand.cs
+ SummaryCommand.cs
+ SunbeamCommand.cs
+ TeleportCommand.cs
+ TimeCommand.cs
+ UnmuteCommand.cs
+ WarpCommand.cs
+ WhisperCommand.cs
+ WhoisCommand.cs
+Models/Communication/
+ ConnectionState.cs
+ LiteNetLibServer.cs
+ SessionManager.cs
+Models/Configuration/
+ NitroxFormatterOptions.cs
+ Providers/
+  NitroxConfigurationProvider.cs
+  NitroxConfigurationSource.cs
+Models/
+ ConsoleUnhandledErrorHandler.cs
+ Exceptions/DuplicateRegistrationException.cs
+ Factories/RandomFactory.cs
+ GameLogic/
+  Bases/BuildingManager.cs
+  ConnectionAssets.cs
+  Entities/
+   EntityData.cs
+   EntityRegistry.cs
+   EntitySimulation.cs
+   GlobalRootData.cs
+   NitroxEntitySlot.cs
+   SimulationWhitelist.cs
+   Spawning/
+    BatchEntitySpawner.cs
+    CrashHomeBootstrapper.cs
+    EntitySpawnPoint.cs
+    EntitySpawnPointFactory.cs
+    GeyserBootstrapper.cs
+    IEntityBootstrapper.cs
+    IEntityBootstrapperManager.cs
+    ReefbackBootstrapper.cs
+    ReefbackSpawnData.cs
+    SerializedEntitySpawnPoint.cs
+    SlotsHelper.cs
+    StayAtLeashPositionBootstrapper.cs
+    SubnauticaEntityBootstrapperManager.cs
+    SubnauticaEntitySpawnPointFactory.cs
+   SubnauticaUwePrefabFactory.cs
+   SubnauticaUweWorldEntityFactory.cs
+   WorldEntityManager.cs
+  EscapePodManager.cs
+  GameData.cs
+  JoiningManager.cs
+  PdaManager.cs
+  PlayerManager.cs
+  Players/
+   PersistedPlayerData.cs
+   PlayerData.cs
+  SimulationOwnership.cs
+  SleepManager.cs
+  StoryManager.cs
+  StoryScheduler.cs
+  StoryTimingData.cs
+  TimeService.cs
+  Unlockables/
+   PdaStateData.cs
+   StoryGoalData.cs
+ Helper/
+  DeterministicGenerator.cs
+  EasyPool.cs
+  XorRandom.cs
+ Logging/
+  DeduplicateErrorInterpolatedStringHandler.cs
+  DeduplicateInterpolatedStringHandler.cs
+  DeduplicateWarningInterpolatedStringHandler.cs
+  Middleware/
+   BreakLoggerMiddleware.cs
+   ConditionalGroupLoggerMiddleware.cs
+   Core/ILoggerMiddleware.cs
+   GroupLoggerMiddleware.cs
+   WriteCategoryLoggerMiddleware.cs
+   WriteConsoleColorLoggerMiddleware.cs
+   WriteExceptionLoggerMiddleware.cs
+   WriteLoggerMiddleware.cs
+   WriteLogLoggerMiddleware.cs
+   WriteNewLineLoggerMiddleware.cs
+   WriteRedactedLogLoggerMiddleware.cs
+   WriteTimeLoggerMiddleware.cs
+  MiddlewareZLoggerFormatter.cs
+  NitroxZLoggerFormatter.cs
+  Redaction/Core/
+   IRedactor.cs
+   RedactResult.cs
+  Redaction/
+   IpRedactor.cs
+   PasswordRedactor.cs
+   PathRedactor.cs
+  Scopes/
+   CaptureScope.cs
+   PlainScope.cs
+   PrefixScope.cs
+  ZLogger/
+   ArrayBufferWriterPool.cs
+   PlainLogProcessor.cs
+   ZLoggerGenericLoggerProvider.cs
+   ZLoggerPlainLoggerProvider.cs
+   ZLoggerPlainOptions.cs
+ Packets/Core/
+  AnonProcessorContext.cs
+  AuthProcessorContext.cs
+  IAnonPacketProcessor.cs
+  IAuthPacketProcessor.cs
+  IPacketSender.cs
+  NopPacketSender.cs
+ Packets/Processors/
+  AggressiveWhenSeeTargetChangedProcessor.cs
+  AnimationChangeEventProcessor.cs
+  AttackCyclopsTargetChangedProcessor.cs
+  BaseDeconstructedProcessor.cs
+  BedEnterProcessor.cs
+  BedExitProcessor.cs
+  BuildingProcessor.cs
+  BuildingResyncRequestProcessor.cs
+  CellVisibilityChangedProcessor.cs
+  ChatMessageProcessor.cs
+  CheatCommandProcessor.cs
+  ClearPlanterProcessor.cs
+  Core/TransmitIfCanSeePacketProcessor.cs
+  CreatureActionChangedProcessor.cs
+  CreaturePoopPerformedProcessor.cs
+  CyclopsDamagePointRepairedProcessor.cs
+  CyclopsDamageProcessor.cs
+  CyclopsFireCreatedProcessor.cs
+  CyclopsRuntimeStateProcessor.cs
+  DefaultServerPacketProcessor.cs
+  DiscordRequestIPProcessor.cs
+  EntityDestroyedPacketProcessor.cs
+  EntityMetadataUpdateProcessor.cs
+  EntityReparentedProcessor.cs
+  EntitySpawnedByClientProcessor.cs
+  EntityTransformUpdatesProcessor.cs
+  EscapePodChangedPacketProcessor.cs
+  FireDousedProcessor.cs
+  FMODAssetProcessor.cs
+  FMODEventInstanceProcessor.cs
+  FootstepPacketProcessor.cs
+  GoalCompletedProcessor.cs
+  KnownTechEntryAddProcessor.cs
+  LargeWaterParkDeconstructedProcessor.cs
+  LeakRepairedProcessor.cs
+  ModifyConstructedAmountProcessor.cs
+  MultiplayerSessionPolicyRequestProcessor.cs
+  MultiplayerSessionReservationRequestProcessor.cs
+  PDAEncyclopediaEntryAddProcessor.cs
+  PDALogEntryAddProcessor.cs
+  PDAScanFinishedPacketProcessor.cs
+  PickupItemPacketProcessor.cs
+  PieceDeconstructedProcessor.cs
+  PinnedRecipeMovedProcessor.cs
+  PlaceBaseProcessor.cs
+  PlaceGhostProcessor.cs
+  PlaceModuleProcessor.cs
+  PlayerDeathEventProcessor.cs
+  PlayerHeldItemChangedProcessor.cs
+  PlayerInCyclopsMovementProcessor.cs
+  PlayerJoiningMultiplayerSessionProcessor.cs
+  PlayerMovementProcessor.cs
+  PlayerQuickSlotsBindingChangedProcessor.cs
+  PlayerSeeOutOfCellEntityProcessor.cs
+  PlayerStatsProcessor.cs
+  PlayerSyncFinishedProcessor.cs
+  PlayerUnseeOutOfCellEntityProcessor.cs
+  PvPAttackProcessor.cs
+  RadioPlayPendingMessageProcessor.cs
+  RangedAttackLastTargetUpdateProcessor.cs
+  RecipePinnedProcessor.cs
+  RemoveCreatureCorpseProcessor.cs
+  ScheduleProcessor.cs
+  SeaDragonAttackTargetProcessor.cs
+  SeaDragonGrabExosuitProcessor.cs
+  SeaDragonSwatAttackProcessor.cs
+  SeaTreaderSpawnedChunkProcessor.cs
+  ServerCommandProcessor.cs
+  SetIntroCinematicModeProcessor.cs
+  SignalPingPreferenceChangedProcessor.cs
+  SimulationOwnershipRequestProcessor.cs
+  StoryGoalExecutedProcessor.cs
+  SubRootChangedPacketProcessor.cs
+  TextAutoCompleteProcessor.cs
+  UpdateBaseProcessor.cs
+  UpdateDisplaySurfaceWaterProcessor.cs
+  UpdateInPrecursorProcessor.cs
+  VehicleDockingProcessor.cs
+  VehicleMovementsPacketProcessor.cs
+  VehicleOnPilotModeChangedProcessor.cs
+  VehicleUndockingProcessor.cs
+  WaterParkDeconstructedProcessor.cs
+  WeldActionProcessor.cs
+ Player.cs
+ Resources/AddressablesTools/Catalog/
+  ClassJsonObject.cs
+  ContentCatalogData.cs
+  ResourceLocation.cs
+  SerializedObjectDecoder.cs
+ Resources/AddressablesTools/Json/
+  ContentCatalogData.cs
+  ObjectInitializationDataJson.cs
+  SerializedTypeJson.cs
+ Resources/Core/
+  IGameResource.cs
+  IPrefabAsset.cs
+  SubnauticaAssetsManager.cs
+  ThreadSafeMonoCecilTempGenerator.cs
+ Resources/Parsers/
+  EntityDistributionsResource.cs
+  IEntityDistributionsAccessor.cs
+  PrefabPlaceholderGroupsResource.cs
+  RandomStartResource.cs
+  WorldEntitiesResource.cs
+ Resources/
+  PrefabPlaceholderAsset.cs
+  PrefabPlaceholderRandomAsset.cs
+  PrefabPlaceholdersGroupAsset.cs
+ Serialization/
+  BatchCellsParser.cs
+  IServerSerializer.cs
+  Json/
+   AttributeContractResolver.cs
+   NitroxIdConverter.cs
+   PeerIdConverter.cs
+   TechTypeConverter.cs
+  SaveDataUpgrades/
+   SaveDataUpgrade.cs
+   Upgrade_V1810.cs
+  ServerJsonSerializer.cs
+  ServerProtoBufSerializer.cs
+  SubnauticaServerProtoBufSerializer.cs
+  World/
+   PersistedWorldData.cs
+   VersionMismatchException.cs
+   WorldData.cs
+   WorldService.cs
+ UnityStubs/GameObject.cs
+Program.cs
+Properties/AssemblyInfo.cs
+Services/
+ AutoSaveService.cs
+ CommandService.cs
+ ConsoleInputService.cs
+ Core/QueingBackgroundService.cs
+ FmodService.cs
+ HibernateService.cs
+ LanBroadcastService.cs
+ MemoryService.cs
+ NetworkPortAvailabilityService.cs
+ PacketRegistryService.cs
+ PacketSerializationService.cs
+ PersistNitroxSerializableConfigService.cs
+ PortForwardService.cs
+ PreventMultiServerInitService.cs
+ RestartService.cs
+ SaveService.cs
+ ServersManagementService.cs
+ StatusService.cs
+ SubnauticaResourceLoaderService.cs
+
+[metadataReferences]
+../
+ Nitrox.Assets.Subnautica/protobuf-net.dll
+ Nitrox.Model.Subnautica/obj/Debug/net10.0/ref/Nitrox.Model.Subnautica.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net10.0/Nitrox.Server.Subnautica.GeneratedMSBuildEditorConfig.editorconfig

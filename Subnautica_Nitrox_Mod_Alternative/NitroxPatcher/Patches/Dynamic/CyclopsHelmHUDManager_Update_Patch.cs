@@ -74,6 +74,15 @@ public sealed partial class CyclopsHelmHUDManager_Update_Patch : NitroxPatch, ID
 
             // Best-effort: set known boolean fields/properties or call a refresh method if present.
             SetBoolMemberIfExists(c, shouldBeSelected, "active", "isActive", "selected", "isSelected", "toggled", "isOn", "highlighted");
+            
+            // 2. FORCE THE ANIMATOR (This is usually what controls the light)
+            Animator anim = c.GetComponent<Animator>();
+            if (anim != null)
+            {
+                // Subnautica UI buttons usually use a "selected" or "active" bool in the animator
+                anim.SetBool("selected", shouldBeSelected);
+            }
+            
             CallRefreshIfExists(c, "UpdateText", "UpdateVisuals", "Refresh", "UpdateState", "UpdateMode");
         }
     }

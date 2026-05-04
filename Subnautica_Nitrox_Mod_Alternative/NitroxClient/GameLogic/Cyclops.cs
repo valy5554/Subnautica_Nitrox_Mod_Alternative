@@ -296,6 +296,29 @@ namespace NitroxClient.GameLogic
         /// Get all of the index locations of all the fires on the <see cref="SubRoot"/>. <see cref="SubFire.RoomFire.spawnNodes"/> contains
         /// a static list of all possible fire nodes.
         /// </summary>
+        // private IEnumerable<CyclopsFireData> GetActiveRoomFires(SubFire subFire)
+        // {
+        //     if (!subFire.subRoot.TryGetIdOrWarn(out NitroxId subRootId))
+        //     {
+        //         yield break;
+        //     }
+
+        //     foreach (KeyValuePair<CyclopsRooms, SubFire.RoomFire> roomFire in subFire.roomFires)
+        //     {
+        //         for (int i = 0; i < roomFire.Value.spawnNodes.Length; i++)
+        //         {
+        //             if (roomFire.Value.spawnNodes[i].childCount > 0)
+        //             {
+        //                 if (!roomFire.Value.spawnNodes[i].GetComponentInChildren<Fire>().TryGetIdOrWarn(out NitroxId fireId))
+        //                 {
+        //                     yield break;
+        //                 }
+
+        //                 yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
+        //             }
+        //         }
+        //     }
+        // }
         private IEnumerable<CyclopsFireData> GetActiveRoomFires(SubFire subFire)
         {
             if (!subFire.subRoot.TryGetIdOrWarn(out NitroxId subRootId))
@@ -305,19 +328,41 @@ namespace NitroxClient.GameLogic
 
             foreach (KeyValuePair<CyclopsRooms, SubFire.RoomFire> roomFire in subFire.roomFires)
             {
+                if (roomFire.Value?.spawnNodes == null) continue;
+
                 for (int i = 0; i < roomFire.Value.spawnNodes.Length; i++)
                 {
-                    if (roomFire.Value.spawnNodes[i].childCount > 0)
+                    // Check if there is a fire object attached to this node
+                    Fire fireComponent = roomFire.Value.spawnNodes[i].GetComponentInChildren<Fire>();
+                    
+                    if (fireComponent != null)
                     {
-                        if (!roomFire.Value.spawnNodes[i].GetComponentInChildren<Fire>().TryGetIdOrWarn(out NitroxId fireId))
+                        // Use TryGetId without the 'OrWarn' to avoid log spam for new fires
+                        if (fireComponent.TryGetId(out NitroxId fireId))
                         {
-                            yield break;
+                            yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
                         }
-
-                        yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
+                        else 
+                        {
+                            // The fire exists but doesn't have a network ID yet.
+                            // We skip it for this frame. The next update (0.5s later) 
+                            // will catch it once the ID is assigned.
+                            continue; 
+                        }
                     }
                 }
             }
+        }
+
+
+
+        /// <summary>
+        /// Forces a synchronization of the fire and damage state. 
+        /// Call this when engine heat triggers a new fire.
+        /// </summary>
+        public void BroadcastFireState(SubRoot subRoot)
+        {
+            BroadcastDamageState(subRoot, Optional<DamageInfo>.Empty);
         }
     }
 }

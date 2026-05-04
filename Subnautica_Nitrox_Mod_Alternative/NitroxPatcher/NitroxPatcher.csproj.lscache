@@ -1,0 +1,944 @@
+version=1
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+language=C#
+lastDtbSucceeded
+
+[sliceDimensions]
+TargetFramework=net10.0
+
+[properties]
+AssemblyName=NitroxPatcher
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=14.0
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=NitroxPatcher
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>bin/Debug/net10.0/NitroxPatcher.dll
+TargetRefPath=<PATH>obj/Debug/net10.0/ref/NitroxPatcher.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:1
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../NitroxPatcher=NitroxPatcher
+/out:obj\Debug\net10.0\NitroxPatcher.dll
+/refout:obj\Debug\net10.0\refint\NitroxPatcher.dll
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+GlobalUsings.cs
+Helper/
+ SupportHelper.cs
+ TranspilerHelper.cs
+Main.cs
+Modules/NitroxPatchesModule.cs
+Patcher.cs
+Patches/Dynamic/
+ AggressiveWhenSeeTarget_IsTargetValid_Patch.cs
+ AggressiveWhenSeeTarget_ScanForAggressionTarget_Patch.cs
+ Application_IsFocused_Patch.cs
+ ArmsController_Start_Patch.cs
+ ArmsController_Update_Patch.cs
+ AttackCyclops_OnCollisionEnter_Patch.cs
+ AttackCyclops_UpdateAggression_Patch.cs
+ AttackLastTarget_CanAttackTarget_Patch.cs
+ AuroraWarnings_Update_Patch.cs
+ BaseDeconstructable_DeconstructionAllowed_Patch.cs
+ BaseDeconstructable_Deconstruct_Patch.cs
+ BaseHullStrength_CrushDamageUpdate_Patch.cs
+ Base_OnPreDestroy_Patch.cs
+ Battery_charge_set_Patch.cs
+ BeaconLabel_SetLabel_Patch.cs
+ Bed_EnterInUseMode_Patch.cs
+ Bed_Update_Patch.cs
+ Bench_ExitSittingMode_Patch.cs
+ Bench_OnHandClick_Patch.cs
+ Bench_OnPlayerDeath_Patch.cs
+ BlueprintHandTarget_UnlockBlueprint_Patch.cs
+ BreakableResource_BreakIntoResources_Patch.cs
+ BreakableResource_SpawnResourceFromPrefab_Patch.cs
+ BuilderTool_Construct_Patch.cs
+ Builder_TryPlace_Patch.cs
+ Builder_Update_Patch.cs
+ Bullet_Update_Patch.cs
+ Charger_Update_Patch.cs
+ CoffeeVendingMachine_OnMachineUse_Patch.cs
+ ConstructableBase_SetState_Patch.cs
+ Constructable_Construct_Patch.cs
+ Constructable_DeconstructAsync_Patch.cs
+ Constructable_DeconstructionAllowed_Patch.cs
+ Constructable_ProgressDeconstruction_Patch.cs
+ ConstructorInput_OnCraftingBegin_Patch.cs
+ Constructor_Deploy_Patch.cs
+ CrafterLogic_NotifyPickup_Patch.cs
+ CrashedShipExploder_OnConsoleCommand_explodeship_Patch.cs
+ CrashedShipExploder_Update_Patch.cs
+ CrashHome_OnDestroy_Patch.cs
+ CrashHome_Spawn_Patch.cs
+ CrashHome_Start_Patch.cs
+ CrashHome_Update_Patch.cs
+ CreatureAction_Perform_Patch.cs
+ CreatureAction_StartPerform_Patch.cs
+ CreatureAction_StopPerform_Patch.cs
+ CreatureDeath_OnAttackByCreature_Patch.cs
+ CreatureDeath_OnKillAsync_Patch.cs
+ CreatureDeath_OnKill_Patch.cs
+ CreatureDeath_OnPickedUp_Patch.cs
+ CreatureDeath_SpawnRespawner_Patch.cs
+ CreatureEgg_Hatch_Patch.cs
+ Creature_ChooseBestAction_Patch.cs
+ CyclopsDamagePoint_OnRepair_Patch.cs
+ CyclopsDecoyLaunchButton_OnClick_Patch.cs
+ CyclopsDestructionEvent_DestroyCyclops_Patch.cs
+ CyclopsDestructionEvent_OnConsoleCommand_Patch.cs
+ CyclopsDestructionEvent_SpawnLootAsync_Patch.cs
+ CyclopsEngineChangeState_OnClick_Patch.cs
+ CyclopsExternalDamageManager_CreatePoint_Patch.cs
+ CyclopsFireSuppressionButton_StartCooldown_Patch.cs
+ CyclopsHelmHUDManager_StopPiloting_Patch.cs
+ CyclopsHelmHUDManager_Update_Patch.cs
+ CyclopsLightingPanel_ToggleFloodlights_Patch.cs
+ CyclopsLightingPanel_ToggleInternalLighting_Patch.cs
+ CyclopsMotorModeButton_OnClick_Patch.cs
+ CyclopsMotorMode_RestoreEngineState_Patch.cs
+ CyclopsMotorMode_SaveEngineStateAndPowerDown_Patch.cs
+ CyclopsMotorMode_Update_Patch.cs
+ CyclopsNoiseManager_GetNoisePercent_Patch.cs
+ CyclopsShieldButton_OnClick_Patch.cs
+ CyclopsShieldButton_ShieldIteration_Patch.cs
+ CyclopsShieldButton_StartShield_Patch.cs
+ CyclopsShieldButton_StopShield_Patch.cs
+ CyclopsSilentRunningAbilityButton_TurnOffSilentRunning_Patch.cs
+ CyclopsSilentRunningAbilityButton_TurnOnSilentRunning_Patch.cs
+ CyclopsSonarButton_OnClick_Patch.cs
+ CyclopsSonarButton_SonarPing_Patch.cs
+ CyclopsSonarButton_Update_Patch.cs
+ CyclopsSonarCreatureDetector_CheckForCreaturesInRange_Patch.cs
+ CyclopsSonarDisplay_NewEntityOnSonar_Patch.cs
+ DayNightCycle_deltaTime_Patch.cs
+ DayNightCycle_OnConsoleCommand_daynightspeed_Patch.cs
+ DayNightCycle_OnConsoleCommand_day_Patch.cs
+ DayNightCycle_OnConsoleCommand_night_Patch.cs
+ DayNightCycle_Update_Patch.cs
+ DevConsole_Submit_Patch.cs
+ DevConsole_Update_Patch.cs
+ DockedVehicleHandTarget_OnHandClick_Patch.cs
+ Drillable_DestroySelf_Patch.cs
+ Drillable_ManagedUpdate_Patch.cs
+ Drillable_OnDrill_Patch.cs
+ Drillable_Restore_Patch.cs
+ Drillable_SpawnLootAsync_Patch.cs
+ Eatable_IterateDespawn_Patch.cs
+ EndCreditsManager_OnLateUpdate_Patch.cs
+ EnergMixin_SpawnDefaultAsync_Patch.cs
+ EnergyMixin_OnAddItem_Patch.cs
+ EntityCell_AwakeAsync_Patch.cs
+ EntityCell_IsAwake_Patch.cs
+ EntityCell_Reset_Patch.cs
+ EntityCell_SerializeAsyncImpl_Patch.cs
+ EntityCell_SerializeWaiterDataAsync_Patch.cs
+ EntityCell_SleepAsync_Patch.cs
+ Equipment_AddItem_Patch.cs
+ Equipment_RemoveItem_Patch.cs
+ ErrorMessage_OnLateUpdate_Patch.cs
+ EscapePodFirstUseCinematicsController_ReleaseCreature_Patch.cs
+ EscapePod_Awake_Patch.cs
+ EscapePod_OnConsoleCommand_randomstart_Patch.cs
+ EscapePod_OnRepair_Patch.cs
+ EscapePod_RespawnPlayer_Patch.cs
+ EscapePod_StartAtPosition_Patch.cs
+ EscapePod_Start_Patch.cs
+ ExosuitClawArm_OnPickupAsync_Patch.cs
+ ExosuitClawArm_TryUse_Patch.cs
+ ExosuitDrillArm_OnUseDown_Patch.cs
+ ExosuitDrillArm_OnUseUp_Patch.cs
+ ExosuitDrillArm_ResetArm_Patch.cs
+ ExosuitGrapplingArm_FixedUpdate_Patch.cs
+ ExosuitGrapplingArm_OnHit_Patch.cs
+ ExosuitGrapplingArm_OnUseUp_Patch.cs
+ ExosuitGrapplingArm_ResetArm_Patch.cs
+ ExosuitPropulsionArm_Update_Patch.cs
+ ExosuitTorpedoArm_OnUseUp_Patch.cs
+ ExosuitTorpedoArm_ResetArm_Patch.cs
+ ExosuitTorpedoArm_TryShoot_Patch.cs
+ Exosuit_FixedUpdate_Patch.cs
+ Exosuit_GetVelocity_Patch.cs
+ Exosuit_UpdateAnimations_Patch.cs
+ FireExtinguisherHolder_TakeTankAsync_Patch.cs
+ FireExtinguisherHolder_TryStoreTank_Patch.cs
+ Fire_Douse_Patch.cs
+ Flare_OnDestroy_Patch.cs
+ Flare_Update_Patch.cs
+ FlashLight_onLightsToggled_Patch.cs
+ Floater_FixedUpdate_Patch.cs
+ FMODUWE_PlayOneShotImpl_Patch.cs
+ FMOD_CustomEmitter_OnPlay_Patch.cs
+ FMOD_CustomEmitter_OnStop_Patch.cs
+ FMOD_CustomEmitter_Start_Patch.cs
+ FMOD_CustomLoopingEmitter_OnPlay_Patch.cs
+ FMOD_CustomLoopingEmitter_PlayStopSound_Patch.cs
+ FMOD_StudioEventEmitter_PlayUI_Patch.cs
+ FMOD_StudioEventEmitter_Start_Patch.cs
+ FMOD_StudioEventEmitter_Stop_Patch.cs
+ FootstepSounds_OnStep_Patch.cs
+ FPSCounter_UpdateDisplay_Patch.cs
+ FreezeRigidbodyWhenFar_Awake_Patch.cs
+ FreezeTime_Set_Patch.cs
+ FruitPlant_Start_Patch.cs
+ FruitPlant_Update_Patch.cs
+ GameModeConsoleCommands_OnConsoleCommand_Patch.cs
+ GhostCrafter_OnCraftingBegin_Patch.cs
+ GhostCrafter_OnCraftingEnd_Patch.cs
+ GoalManager_OnCompletedGoal_Patch.cs
+ GotoConsoleCommand_GotoPosition_Patch.cs
+ GrapplingHook_OnCollisionEnter_Patch.cs
+ GroundMotor_OnControllerColliderHit_Patch.cs
+ GrowingPlant_SpawnGrownModelAsync_Patch.cs
+ GrownPlant_OnKill_Patch.cs
+ IncubatorActivationTerminal_OnHandClick_Patch.cs
+ IncubatorActivationTerminal_OnPlayerCinematicModeEnd_Patch.cs
+ IncubatorEggAnimation_OnHatchAnimationEnd_Patch.cs
+ IncubatorEgg_HatchNow_Patch.cs
+ Incubator_OnHandClick_Patch.cs
+ Incubator_OnHatched_Patch.cs
+ IngameMenu_OnDeselect_Patch.cs
+ IngameMenu_OnSelect_Patch.cs
+ IngameMenu_QuitGameAsync_Patch.cs
+ IngameMenu_QuitGame_Patch.cs
+ IngameMenu_QuitSubscreen_Patch.cs
+ Inventory_LoseItems_Patch.cs
+ Inventory_Pickup_Patch.cs
+ ItemsContainer_DestroyItem_Patch.cs
+ ItemsContainer_NotifyAddItem_Patch.cs
+ KeypadDoorConsole_AcceptNumberField_Patch.cs
+ Knife_OnToolUseAnim_Patch.cs
+ KnownTech_NotifyAdd_Patch.cs
+ KnownTech_NotifyAnalyze_Patch.cs
+ LargeRoomWaterPark_OnDeconstructionStart_Patch.cs
+ LargeWorldEntity_UpdateCell_Patch.cs
+ LaunchRocket_OnHandClick_Patch.cs
+ LeakingRadiation_OnConsoleCommand_decontaminate_Patch.cs
+ LeakingRadiation_Update_Patch.cs
+ LiveMixin_AddHealth_Patch.cs
+ LiveMixin_Kill_Patch.cs
+ LiveMixin_TakeDamage_Patch.cs
+ MedicalCabinet_OnHandClick_Patch.cs
+ MeleeAttack_CanDealDamageTo_Patch.cs
+ NoCostConsoleCommand_OnConsoleCommand_bobthebuilder_Patch.cs
+ NoCostConsoleCommand_OnConsoleCommand_fastgrow_Patch.cs
+ NoCostConsoleCommand_OnConsoleCommand_fasthatch_Patch.cs
+ Openable_OnTriggerEnter_Patch.cs
+ Openable_OnTriggerExit_Patch.cs
+ Openable_PlayOpenAnimation_Patch.cs
+ PDAEncyclopedia_Add_Patch.cs
+ PDALog_Add_Patch.cs
+ PDAScanner_Scan_Patch.cs
+ PickPrefab_AddToContainerAsync_Patch.cs
+ PickPrefab_SetPickedState_Patch.cs
+ PickPrefab_SetPickedUp_Patch.cs
+ Pickupable_Drop_Patch.cs
+ Pickupable_OnDestroy_Patch.cs
+ Pickupable_Pickup_Patch.cs
+ PilotingChair_OnHandClick_Patch.cs
+ PilotingChair_OnPlayerDeath_Patch.cs
+ PilotingChair_OnSteeringStart_Patch.cs
+ PilotingChair_ReleaseBy_Patch.cs
+ PingInstance_Set_Patches.cs
+ PinManager_NotifyAdd_Patch.cs
+ PinManager_NotifyMovePatch.cs
+ PinManager_NotifyRemove_Patch.cs
+ PipeSurfaceFloater_FixedUpdate_Patch.cs
+ PlaceTool_Place_Patch.cs
+ Planter_AddItem_Patch.cs
+ Planter_ReplaceItem_Patch.cs
+ Planter_ResetStorage_Patch.cs
+ PlatformUtils_GetDevToolsEnabled_Patch.cs
+ PlayerCinematicController_OnPlayerCinematicModeEnd_Patch.cs
+ PlayerCinematicController_StartCinematicMode_Patch.cs
+ PlayerCinematicController_Start_Patch.cs
+ Player_EnterPilotingMode_Patch.cs
+ Player_ExitLockedMode_Patch.cs
+ Player_ExitPilotingMode_Patch.cs
+ Player_MovePlayerToRespawnPoint_Patch.cs
+ Player_OnKill_Patch.cs
+ Player_OnPlayerPositionCheat_Patch.cs
+ Player_RequiresHighPrecisionPhysics_Patch.cs
+ Player_SetCurrentEscapePod_Patch.cs
+ Player_SetCurrentSub_Patch.cs
+ Player_Start_Patch.cs
+ Player_TriggerInfectionRevealAsync_Patch.cs
+ Player_WarpForward_Patch.cs
+ Poop_Perform_Patch.cs
+ PrecursorDisableGunTerminal_OnPlayerCinematicModeEnd_Patch.cs
+ PrecursorDoorMotorModeSetter_OnTriggerEnter_Patch.cs
+ PrecursorDoorway_ToggleDoor_Patch.cs
+ PrecursorKeyTerminal_DestroyKey_Patch.cs
+ PrecursorKeyTerminal_OnHandClick_Patch.cs
+ PrecursorMoonPoolTrigger_Update_Patch.cs
+ PrecursorTeleporterActivationTerminal_OnPlayerCinematicModeEnd_Patch.cs
+ PrecursorTeleporterActivationTerminal_OnProxyHandClick_Patch.cs
+ PrecursorTeleporter_OnActivateTeleporter_Patch.cs
+ PrefabPlaceholdersGroup_Spawn_Patch.cs
+ PropulsionCannon_GrabObject_Patch.cs
+ PropulsionCannon_ReleaseGrabbedObject_Patch.cs
+ QuickSlots_Bind_Patch.cs
+ QuickSlots_DeselectInternal_Patch.cs
+ QuickSlots_SelectInternal_Patch.cs
+ Radio_OnRepair_Patch.cs
+ Radio_PlayRadioMessage_Patch.cs
+ RangedAttackLastTarget_StartCasting_Patch.cs
+ RangedAttackLastTarget_StartCharging_Patch.cs
+ ReaperLeviathan_GrabVehicle_Patch.cs
+ ReaperLeviathan_ReleaseVehicle_Patch.cs
+ ReefbackLife_OnEnable_Patch.cs
+ Respawn_Start_Patch.cs
+ RocketConstructor_StartRocketConstruction_Patch.cs
+ RocketPreflightCheckManager_CompletePreflightCheck_Patch.cs
+ Rocket_CallElevator_Patch.cs
+ Rocket_ElevatorControlButtonActivate_Patch.cs
+ SeaDragonAggressiveTowardsSharks_GetAggressionTarget_Patch.cs
+ SeaDragonAggressiveTowardsSharks_OnMeleeAttack_Patch.cs
+ SeaDragonMeleeAttack_OnThrowExosuit_Patch.cs
+ SeaDragonMeleeAttack_OnTouchFront_Patch.cs
+ SeaDragonMeleeAttack_OnTouchLeft_Patch.cs
+ SeaDragonMeleeAttack_OnTouchRight_Patch.cs
+ SeaDragonMeleeAttack_SwatAttack_Patch.cs
+ SeaDragon_GrabExosuit_Patch.cs
+ SeaDragon_ReleaseExosuit_Patch.cs
+ SeaEmperorBaby_Start_Patch.cs
+ Seaglide_onLightsToggled_Patch.cs
+ Sealed_Weld_Patch.cs
+ SeamothTorpedoWhirlpool_Register_Patch.cs
+ SeamothTorpedo_Explode_Patch.cs
+ SeamothTorpedo_RepeatingTargeting_Patch.cs
+ SeamothTorpedo_Update_Patch.cs
+ SeaMoth_FixedUpdate_Patch.cs
+ SeaMoth_onLightsToggled_Patch.cs
+ SeaMoth_OnUpgradeModuleUse_Patch.cs
+ SeaTreaderSounds_SpawnChunks_Patch.cs
+ SeaTreader_SetNextPathPoint_Patch.cs
+ SeaTreader_UpdatePath_Patch.cs
+ SeaTreader_UpdateTurning_Patch.cs
+ SeaTreader_Update_Patch.cs
+ SpawnConsoleCommand_OnConsoleCommand_Patch.cs
+ SpawnConsoleCommand_SpawnAsync_Patch.cs
+ SpawnEscapePodSupplies_OnNewBorn_Patch.cs
+ SpawnOnKill_OnKill_Patch.cs
+ SpeedConsoleCommand_OnConsoleCommand_speed_Patch.cs
+ SplineFollowing_GoTo_Patch.cs
+ Stalker_CheckLoseTooth_Patch.cs
+ StarshipDoor_LockDoor_Patch.cs
+ StarshipDoor_OnDoorToggle_Patch.cs
+ StarshipDoor_UnlockDoor_Patch.cs
+ StasisSphere_Freeze_Patch.cs
+ StasisSphere_LateUpdate_Patch.cs
+ StasisSphere_OnHit_Patch.cs
+ StasisSphere_Shoot_Patch.cs
+ StoryGoalCustomEventHandler_OnConsoleCommand_Patch.cs
+ StoryGoalScheduler_Schedule_Patch.cs
+ StoryGoal_Execute_Patch.cs
+ StoryHandTarget_OnHandClick_Patch.cs
+ SubConsoleCommand_OnConsoleCommand_sub_Patch.cs
+ SubControl_FixedUpdate_Patch.cs
+ SubControl_Start_Patch.cs
+ SubControl_Update_Patch.cs
+ SubFire_CreateFire_Patch.cs
+ SubNameInput_Awake_Patch.cs
+ SubNameInput_OnColorChange_Patch.cs
+ SubNameInput_OnNameChange_Patch.cs
+ SubNameInput_SetTarget_Patch.cs
+ SubRoot_OnPlayerEntered_Patch.cs
+ SubRoot_OnPlayerExited_Patch.cs
+ SubRoot_OnTakeDamage_Patch.cs
+ SubRoot_SetCyclopsUpgrades_Patch.cs
+ Survival_Eat_Patch.cs
+ Survival_Use_Patch.cs
+ SwimBehaviour_ManagedUpdate_Patch.cs
+ TimeCapsule_Open_Patch.cs
+ ToggleLights_SetLightsActive_Patch.cs
+ Trashcan_Update_Patch.cs
+ uGUI_ColorPicker_Awake_Patch.cs
+ uGUI_OnApplicationQuit_Patch.cs
+ uGUI_PDA_CacheToolbarTooltips_Patch.cs
+ uGUI_PDA_Initialize_Patch.cs
+ uGUI_PDA_SetTabs_Patch.cs
+ uGUI_Pings_IsVisibleNow_Patch.cs
+ uGUI_SceneIntro_HandleInput_Patch.cs
+ uGUI_SceneIntro_IntroSequence_Patch.cs
+ uGUI_SignInput_OnDeselect_Patch.cs
+ uSkyManager_SetVaryingMaterialProperties_Patch.cs
+ Utils_GetEntityRoot_Patch.cs
+ Utils_PlayFMODAsset_Patch.cs
+ VehicleDockingBay_OnTriggerEnter.cs
+ VehicleDockingBay_OnUndockingComplete_Patch.cs
+ Vehicle_AddEnergy_Patch.cs
+ Vehicle_OnHandClick_Patch.cs
+ Vehicle_OnKill_Patch.cs
+ Vehicle_OnPilotModeBegin_Patch.cs
+ Vehicle_OnPilotModeEnd_Patch.cs
+ Vehicle_TorpedoShot_Patch.cs
+ Vehicle_UpdateEnergyRecharge_Patch.cs
+ WaterParkCreature_BornAsync_Patch.cs
+ WaterParkCreature_ManagedUpdate_Patch.cs
+ WaterParkCreature_ResetBreedTime_Patch.cs
+ WaterParkItem_ManagedUpdate_Patch.cs
+ WaterPark_Split_Patch.cs
+ WaterPark_TransferValue_Patch.cs
+ WeldableWallPanelGeneric_UnlockDoor_Patch.cs
+ Welder_Weld_Patch.cs
+Patches/
+ IDynamicPatch.cs
+ INitroxPatch.cs
+ IPersistentPatch.cs
+ NitroxPatch.cs
+ PacketSuppressorPatch.cs
+ Persistent/
+  Application_runInBackground_Patch.cs
+  CellManager_GetPrefabForSlot_Patch.cs
+  CellManager_TryLoadCacheBatchCells_Patch.cs
+  Enum_GetValues_Patch.cs
+  EscapePodFirstUseCinematicsController_OnSceneObjectsLoaded_Patch.cs
+  GameAnalytics_Patch.cs
+  GameInputSystem_Initialize_Patch.cs
+  Language_LoadLanguageFile_Patch.cs
+  MainGameController_StartGame_Patch.cs
+  MainMenuLoadButton_RestoreParentsSettings_Patch.cs
+  MainMenuRightSide_OpenGroup_Patch.cs
+  ProtobufSerializer_Deserialize_Patch.cs
+  ProtobufSerializer_Serialize_Patch.cs
+  ReefbackLife_OnEnable_Patch.cs
+  ScreenshotManager_Combine_Patch.cs
+  StartScreen_TryToShowDisclaimer_Patch.cs
+  uGUI_FeedbackCollector_IsEnabled_Patch.cs
+  uGUI_MainMenu_Start_Patch.cs
+  uGUI_OptionsPanel_AddAccessibilityTab_Patch.cs
+  uGUI_OptionsPanel_AddTabs_Patch.cs
+  uGUI_TabbedControlsPanel_AddBindingOption_Patch.cs
+  UnityEngine_SetupCoroutine_Patch.cs
+PatternMatching/
+ ILExtensions.cs
+ InstructionPattern.cs
+ InstructionsPattern.cs
+ OpCodePattern.cs
+ OperandPattern.cs
+Properties/AssemblyInfo.cs
+
+[metadataReferences]
+../
+ Nitrox.Model.Subnautica/obj/Debug/net10.0/ref/Nitrox.Model.Subnautica.dll
+ NitroxClient/obj/Debug/net10.0/ref/NitroxClient.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net10.0/NitroxPatcher.GeneratedMSBuildEditorConfig.editorconfig
+
+---
+
+[project]
+language=C#
+primary
+lastDtbSucceeded
+
+[sliceDimensions]
+TargetFramework=net472
+
+[properties]
+AssemblyName=NitroxPatcher
+CommandLineArgsForDesignTimeEvaluation=-langversion:14 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=7.3
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=NitroxPatcher
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Nitrox.slnx
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>bin/Debug/net472/NitroxPatcher.dll
+TargetRefPath=
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:4
+/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/highentropyva+
+/nullable:annotations
+/debug+
+/debug:embedded
+/filealign:512
+/optimize-
+/pathmap:<PATH>../NitroxPatcher=NitroxPatcher
+/out:obj\Debug\net472\NitroxPatcher.dll
+/subsystemversion:6.00
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:14
+/warnaserror+:NU1605
+
+[sourceFiles]
+<NUGET>/bepinex.assemblypublicizer.msbuild/0.4.2/contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs
+GlobalUsings.cs
+Helper/
+ SupportHelper.cs
+ TranspilerHelper.cs
+Main.cs
+Modules/NitroxPatchesModule.cs
+Patcher.cs
+Patches/Dynamic/
+ AggressiveWhenSeeTarget_IsTargetValid_Patch.cs
+ AggressiveWhenSeeTarget_ScanForAggressionTarget_Patch.cs
+ Application_IsFocused_Patch.cs
+ ArmsController_Start_Patch.cs
+ ArmsController_Update_Patch.cs
+ AttackCyclops_OnCollisionEnter_Patch.cs
+ AttackCyclops_UpdateAggression_Patch.cs
+ AttackLastTarget_CanAttackTarget_Patch.cs
+ AuroraWarnings_Update_Patch.cs
+ BaseDeconstructable_DeconstructionAllowed_Patch.cs
+ BaseDeconstructable_Deconstruct_Patch.cs
+ BaseHullStrength_CrushDamageUpdate_Patch.cs
+ Base_OnPreDestroy_Patch.cs
+ Battery_charge_set_Patch.cs
+ BeaconLabel_SetLabel_Patch.cs
+ Bed_EnterInUseMode_Patch.cs
+ Bed_Update_Patch.cs
+ Bench_ExitSittingMode_Patch.cs
+ Bench_OnHandClick_Patch.cs
+ Bench_OnPlayerDeath_Patch.cs
+ BlueprintHandTarget_UnlockBlueprint_Patch.cs
+ BreakableResource_BreakIntoResources_Patch.cs
+ BreakableResource_SpawnResourceFromPrefab_Patch.cs
+ BuilderTool_Construct_Patch.cs
+ Builder_TryPlace_Patch.cs
+ Builder_Update_Patch.cs
+ Bullet_Update_Patch.cs
+ Charger_Update_Patch.cs
+ CoffeeVendingMachine_OnMachineUse_Patch.cs
+ ConstructableBase_SetState_Patch.cs
+ Constructable_Construct_Patch.cs
+ Constructable_DeconstructAsync_Patch.cs
+ Constructable_DeconstructionAllowed_Patch.cs
+ Constructable_ProgressDeconstruction_Patch.cs
+ ConstructorInput_OnCraftingBegin_Patch.cs
+ Constructor_Deploy_Patch.cs
+ CrafterLogic_NotifyPickup_Patch.cs
+ CrashedShipExploder_OnConsoleCommand_explodeship_Patch.cs
+ CrashedShipExploder_Update_Patch.cs
+ CrashHome_OnDestroy_Patch.cs
+ CrashHome_Spawn_Patch.cs
+ CrashHome_Start_Patch.cs
+ CrashHome_Update_Patch.cs
+ CreatureAction_Perform_Patch.cs
+ CreatureAction_StartPerform_Patch.cs
+ CreatureAction_StopPerform_Patch.cs
+ CreatureDeath_OnAttackByCreature_Patch.cs
+ CreatureDeath_OnKillAsync_Patch.cs
+ CreatureDeath_OnKill_Patch.cs
+ CreatureDeath_OnPickedUp_Patch.cs
+ CreatureDeath_SpawnRespawner_Patch.cs
+ CreatureEgg_Hatch_Patch.cs
+ Creature_ChooseBestAction_Patch.cs
+ CyclopsDamagePoint_OnRepair_Patch.cs
+ CyclopsDecoyLaunchButton_OnClick_Patch.cs
+ CyclopsDestructionEvent_DestroyCyclops_Patch.cs
+ CyclopsDestructionEvent_OnConsoleCommand_Patch.cs
+ CyclopsDestructionEvent_SpawnLootAsync_Patch.cs
+ CyclopsEngineChangeState_OnClick_Patch.cs
+ CyclopsExternalDamageManager_CreatePoint_Patch.cs
+ CyclopsFireSuppressionButton_StartCooldown_Patch.cs
+ CyclopsHelmHUDManager_StopPiloting_Patch.cs
+ CyclopsHelmHUDManager_Update_Patch.cs
+ CyclopsLightingPanel_ToggleFloodlights_Patch.cs
+ CyclopsLightingPanel_ToggleInternalLighting_Patch.cs
+ CyclopsMotorModeButton_OnClick_Patch.cs
+ CyclopsMotorMode_RestoreEngineState_Patch.cs
+ CyclopsMotorMode_SaveEngineStateAndPowerDown_Patch.cs
+ CyclopsMotorMode_Update_Patch.cs
+ CyclopsNoiseManager_GetNoisePercent_Patch.cs
+ CyclopsShieldButton_OnClick_Patch.cs
+ CyclopsShieldButton_ShieldIteration_Patch.cs
+ CyclopsShieldButton_StartShield_Patch.cs
+ CyclopsShieldButton_StopShield_Patch.cs
+ CyclopsSilentRunningAbilityButton_TurnOffSilentRunning_Patch.cs
+ CyclopsSilentRunningAbilityButton_TurnOnSilentRunning_Patch.cs
+ CyclopsSonarButton_OnClick_Patch.cs
+ CyclopsSonarButton_SonarPing_Patch.cs
+ CyclopsSonarButton_Update_Patch.cs
+ CyclopsSonarCreatureDetector_CheckForCreaturesInRange_Patch.cs
+ CyclopsSonarDisplay_NewEntityOnSonar_Patch.cs
+ DayNightCycle_deltaTime_Patch.cs
+ DayNightCycle_OnConsoleCommand_daynightspeed_Patch.cs
+ DayNightCycle_OnConsoleCommand_day_Patch.cs
+ DayNightCycle_OnConsoleCommand_night_Patch.cs
+ DayNightCycle_Update_Patch.cs
+ DevConsole_Submit_Patch.cs
+ DevConsole_Update_Patch.cs
+ DockedVehicleHandTarget_OnHandClick_Patch.cs
+ Drillable_DestroySelf_Patch.cs
+ Drillable_ManagedUpdate_Patch.cs
+ Drillable_OnDrill_Patch.cs
+ Drillable_Restore_Patch.cs
+ Drillable_SpawnLootAsync_Patch.cs
+ Eatable_IterateDespawn_Patch.cs
+ EndCreditsManager_OnLateUpdate_Patch.cs
+ EnergMixin_SpawnDefaultAsync_Patch.cs
+ EnergyMixin_OnAddItem_Patch.cs
+ EntityCell_AwakeAsync_Patch.cs
+ EntityCell_IsAwake_Patch.cs
+ EntityCell_Reset_Patch.cs
+ EntityCell_SerializeAsyncImpl_Patch.cs
+ EntityCell_SerializeWaiterDataAsync_Patch.cs
+ EntityCell_SleepAsync_Patch.cs
+ Equipment_AddItem_Patch.cs
+ Equipment_RemoveItem_Patch.cs
+ ErrorMessage_OnLateUpdate_Patch.cs
+ EscapePodFirstUseCinematicsController_ReleaseCreature_Patch.cs
+ EscapePod_Awake_Patch.cs
+ EscapePod_OnConsoleCommand_randomstart_Patch.cs
+ EscapePod_OnRepair_Patch.cs
+ EscapePod_RespawnPlayer_Patch.cs
+ EscapePod_StartAtPosition_Patch.cs
+ EscapePod_Start_Patch.cs
+ ExosuitClawArm_OnPickupAsync_Patch.cs
+ ExosuitClawArm_TryUse_Patch.cs
+ ExosuitDrillArm_OnUseDown_Patch.cs
+ ExosuitDrillArm_OnUseUp_Patch.cs
+ ExosuitDrillArm_ResetArm_Patch.cs
+ ExosuitGrapplingArm_FixedUpdate_Patch.cs
+ ExosuitGrapplingArm_OnHit_Patch.cs
+ ExosuitGrapplingArm_OnUseUp_Patch.cs
+ ExosuitGrapplingArm_ResetArm_Patch.cs
+ ExosuitPropulsionArm_Update_Patch.cs
+ ExosuitTorpedoArm_OnUseUp_Patch.cs
+ ExosuitTorpedoArm_ResetArm_Patch.cs
+ ExosuitTorpedoArm_TryShoot_Patch.cs
+ Exosuit_FixedUpdate_Patch.cs
+ Exosuit_GetVelocity_Patch.cs
+ Exosuit_UpdateAnimations_Patch.cs
+ FireExtinguisherHolder_TakeTankAsync_Patch.cs
+ FireExtinguisherHolder_TryStoreTank_Patch.cs
+ Fire_Douse_Patch.cs
+ Flare_OnDestroy_Patch.cs
+ Flare_Update_Patch.cs
+ FlashLight_onLightsToggled_Patch.cs
+ Floater_FixedUpdate_Patch.cs
+ FMODUWE_PlayOneShotImpl_Patch.cs
+ FMOD_CustomEmitter_OnPlay_Patch.cs
+ FMOD_CustomEmitter_OnStop_Patch.cs
+ FMOD_CustomEmitter_Start_Patch.cs
+ FMOD_CustomLoopingEmitter_OnPlay_Patch.cs
+ FMOD_CustomLoopingEmitter_PlayStopSound_Patch.cs
+ FMOD_StudioEventEmitter_PlayUI_Patch.cs
+ FMOD_StudioEventEmitter_Start_Patch.cs
+ FMOD_StudioEventEmitter_Stop_Patch.cs
+ FootstepSounds_OnStep_Patch.cs
+ FPSCounter_UpdateDisplay_Patch.cs
+ FreezeRigidbodyWhenFar_Awake_Patch.cs
+ FreezeTime_Set_Patch.cs
+ FruitPlant_Start_Patch.cs
+ FruitPlant_Update_Patch.cs
+ GameModeConsoleCommands_OnConsoleCommand_Patch.cs
+ GhostCrafter_OnCraftingBegin_Patch.cs
+ GhostCrafter_OnCraftingEnd_Patch.cs
+ GoalManager_OnCompletedGoal_Patch.cs
+ GotoConsoleCommand_GotoPosition_Patch.cs
+ GrapplingHook_OnCollisionEnter_Patch.cs
+ GroundMotor_OnControllerColliderHit_Patch.cs
+ GrowingPlant_SpawnGrownModelAsync_Patch.cs
+ GrownPlant_OnKill_Patch.cs
+ IncubatorActivationTerminal_OnHandClick_Patch.cs
+ IncubatorActivationTerminal_OnPlayerCinematicModeEnd_Patch.cs
+ IncubatorEggAnimation_OnHatchAnimationEnd_Patch.cs
+ IncubatorEgg_HatchNow_Patch.cs
+ Incubator_OnHandClick_Patch.cs
+ Incubator_OnHatched_Patch.cs
+ IngameMenu_OnDeselect_Patch.cs
+ IngameMenu_OnSelect_Patch.cs
+ IngameMenu_QuitGameAsync_Patch.cs
+ IngameMenu_QuitGame_Patch.cs
+ IngameMenu_QuitSubscreen_Patch.cs
+ Inventory_LoseItems_Patch.cs
+ Inventory_Pickup_Patch.cs
+ ItemsContainer_DestroyItem_Patch.cs
+ ItemsContainer_NotifyAddItem_Patch.cs
+ KeypadDoorConsole_AcceptNumberField_Patch.cs
+ Knife_OnToolUseAnim_Patch.cs
+ KnownTech_NotifyAdd_Patch.cs
+ KnownTech_NotifyAnalyze_Patch.cs
+ LargeRoomWaterPark_OnDeconstructionStart_Patch.cs
+ LargeWorldEntity_UpdateCell_Patch.cs
+ LaunchRocket_OnHandClick_Patch.cs
+ LeakingRadiation_OnConsoleCommand_decontaminate_Patch.cs
+ LeakingRadiation_Update_Patch.cs
+ LiveMixin_AddHealth_Patch.cs
+ LiveMixin_Kill_Patch.cs
+ LiveMixin_TakeDamage_Patch.cs
+ MedicalCabinet_OnHandClick_Patch.cs
+ MeleeAttack_CanDealDamageTo_Patch.cs
+ NoCostConsoleCommand_OnConsoleCommand_bobthebuilder_Patch.cs
+ NoCostConsoleCommand_OnConsoleCommand_fastgrow_Patch.cs
+ NoCostConsoleCommand_OnConsoleCommand_fasthatch_Patch.cs
+ Openable_OnTriggerEnter_Patch.cs
+ Openable_OnTriggerExit_Patch.cs
+ Openable_PlayOpenAnimation_Patch.cs
+ PDAEncyclopedia_Add_Patch.cs
+ PDALog_Add_Patch.cs
+ PDAScanner_Scan_Patch.cs
+ PickPrefab_AddToContainerAsync_Patch.cs
+ PickPrefab_SetPickedState_Patch.cs
+ PickPrefab_SetPickedUp_Patch.cs
+ Pickupable_Drop_Patch.cs
+ Pickupable_OnDestroy_Patch.cs
+ Pickupable_Pickup_Patch.cs
+ PilotingChair_OnHandClick_Patch.cs
+ PilotingChair_OnPlayerDeath_Patch.cs
+ PilotingChair_OnSteeringStart_Patch.cs
+ PilotingChair_ReleaseBy_Patch.cs
+ PingInstance_Set_Patches.cs
+ PinManager_NotifyAdd_Patch.cs
+ PinManager_NotifyMovePatch.cs
+ PinManager_NotifyRemove_Patch.cs
+ PipeSurfaceFloater_FixedUpdate_Patch.cs
+ PlaceTool_Place_Patch.cs
+ Planter_AddItem_Patch.cs
+ Planter_ReplaceItem_Patch.cs
+ Planter_ResetStorage_Patch.cs
+ PlatformUtils_GetDevToolsEnabled_Patch.cs
+ PlayerCinematicController_OnPlayerCinematicModeEnd_Patch.cs
+ PlayerCinematicController_StartCinematicMode_Patch.cs
+ PlayerCinematicController_Start_Patch.cs
+ Player_EnterPilotingMode_Patch.cs
+ Player_ExitLockedMode_Patch.cs
+ Player_ExitPilotingMode_Patch.cs
+ Player_MovePlayerToRespawnPoint_Patch.cs
+ Player_OnKill_Patch.cs
+ Player_OnPlayerPositionCheat_Patch.cs
+ Player_RequiresHighPrecisionPhysics_Patch.cs
+ Player_SetCurrentEscapePod_Patch.cs
+ Player_SetCurrentSub_Patch.cs
+ Player_Start_Patch.cs
+ Player_TriggerInfectionRevealAsync_Patch.cs
+ Player_WarpForward_Patch.cs
+ Poop_Perform_Patch.cs
+ PrecursorDisableGunTerminal_OnPlayerCinematicModeEnd_Patch.cs
+ PrecursorDoorMotorModeSetter_OnTriggerEnter_Patch.cs
+ PrecursorDoorway_ToggleDoor_Patch.cs
+ PrecursorKeyTerminal_DestroyKey_Patch.cs
+ PrecursorKeyTerminal_OnHandClick_Patch.cs
+ PrecursorMoonPoolTrigger_Update_Patch.cs
+ PrecursorTeleporterActivationTerminal_OnPlayerCinematicModeEnd_Patch.cs
+ PrecursorTeleporterActivationTerminal_OnProxyHandClick_Patch.cs
+ PrecursorTeleporter_OnActivateTeleporter_Patch.cs
+ PrefabPlaceholdersGroup_Spawn_Patch.cs
+ PropulsionCannon_GrabObject_Patch.cs
+ PropulsionCannon_ReleaseGrabbedObject_Patch.cs
+ QuickSlots_Bind_Patch.cs
+ QuickSlots_DeselectInternal_Patch.cs
+ QuickSlots_SelectInternal_Patch.cs
+ Radio_OnRepair_Patch.cs
+ Radio_PlayRadioMessage_Patch.cs
+ RangedAttackLastTarget_StartCasting_Patch.cs
+ RangedAttackLastTarget_StartCharging_Patch.cs
+ ReaperLeviathan_GrabVehicle_Patch.cs
+ ReaperLeviathan_ReleaseVehicle_Patch.cs
+ ReefbackLife_OnEnable_Patch.cs
+ Respawn_Start_Patch.cs
+ RocketConstructor_StartRocketConstruction_Patch.cs
+ RocketPreflightCheckManager_CompletePreflightCheck_Patch.cs
+ Rocket_CallElevator_Patch.cs
+ Rocket_ElevatorControlButtonActivate_Patch.cs
+ SeaDragonAggressiveTowardsSharks_GetAggressionTarget_Patch.cs
+ SeaDragonAggressiveTowardsSharks_OnMeleeAttack_Patch.cs
+ SeaDragonMeleeAttack_OnThrowExosuit_Patch.cs
+ SeaDragonMeleeAttack_OnTouchFront_Patch.cs
+ SeaDragonMeleeAttack_OnTouchLeft_Patch.cs
+ SeaDragonMeleeAttack_OnTouchRight_Patch.cs
+ SeaDragonMeleeAttack_SwatAttack_Patch.cs
+ SeaDragon_GrabExosuit_Patch.cs
+ SeaDragon_ReleaseExosuit_Patch.cs
+ SeaEmperorBaby_Start_Patch.cs
+ Seaglide_onLightsToggled_Patch.cs
+ Sealed_Weld_Patch.cs
+ SeamothTorpedoWhirlpool_Register_Patch.cs
+ SeamothTorpedo_Explode_Patch.cs
+ SeamothTorpedo_RepeatingTargeting_Patch.cs
+ SeamothTorpedo_Update_Patch.cs
+ SeaMoth_FixedUpdate_Patch.cs
+ SeaMoth_onLightsToggled_Patch.cs
+ SeaMoth_OnUpgradeModuleUse_Patch.cs
+ SeaTreaderSounds_SpawnChunks_Patch.cs
+ SeaTreader_SetNextPathPoint_Patch.cs
+ SeaTreader_UpdatePath_Patch.cs
+ SeaTreader_UpdateTurning_Patch.cs
+ SeaTreader_Update_Patch.cs
+ SpawnConsoleCommand_OnConsoleCommand_Patch.cs
+ SpawnConsoleCommand_SpawnAsync_Patch.cs
+ SpawnEscapePodSupplies_OnNewBorn_Patch.cs
+ SpawnOnKill_OnKill_Patch.cs
+ SpeedConsoleCommand_OnConsoleCommand_speed_Patch.cs
+ SplineFollowing_GoTo_Patch.cs
+ Stalker_CheckLoseTooth_Patch.cs
+ StarshipDoor_LockDoor_Patch.cs
+ StarshipDoor_OnDoorToggle_Patch.cs
+ StarshipDoor_UnlockDoor_Patch.cs
+ StasisSphere_Freeze_Patch.cs
+ StasisSphere_LateUpdate_Patch.cs
+ StasisSphere_OnHit_Patch.cs
+ StasisSphere_Shoot_Patch.cs
+ StoryGoalCustomEventHandler_OnConsoleCommand_Patch.cs
+ StoryGoalScheduler_Schedule_Patch.cs
+ StoryGoal_Execute_Patch.cs
+ StoryHandTarget_OnHandClick_Patch.cs
+ SubConsoleCommand_OnConsoleCommand_sub_Patch.cs
+ SubControl_FixedUpdate_Patch.cs
+ SubControl_Start_Patch.cs
+ SubControl_Update_Patch.cs
+ SubFire_CreateFire_Patch.cs
+ SubNameInput_Awake_Patch.cs
+ SubNameInput_OnColorChange_Patch.cs
+ SubNameInput_OnNameChange_Patch.cs
+ SubNameInput_SetTarget_Patch.cs
+ SubRoot_OnPlayerEntered_Patch.cs
+ SubRoot_OnPlayerExited_Patch.cs
+ SubRoot_OnTakeDamage_Patch.cs
+ SubRoot_SetCyclopsUpgrades_Patch.cs
+ Survival_Eat_Patch.cs
+ Survival_Use_Patch.cs
+ SwimBehaviour_ManagedUpdate_Patch.cs
+ TimeCapsule_Open_Patch.cs
+ ToggleLights_SetLightsActive_Patch.cs
+ Trashcan_Update_Patch.cs
+ uGUI_ColorPicker_Awake_Patch.cs
+ uGUI_OnApplicationQuit_Patch.cs
+ uGUI_PDA_CacheToolbarTooltips_Patch.cs
+ uGUI_PDA_Initialize_Patch.cs
+ uGUI_PDA_SetTabs_Patch.cs
+ uGUI_Pings_IsVisibleNow_Patch.cs
+ uGUI_SceneIntro_HandleInput_Patch.cs
+ uGUI_SceneIntro_IntroSequence_Patch.cs
+ uGUI_SignInput_OnDeselect_Patch.cs
+ uSkyManager_SetVaryingMaterialProperties_Patch.cs
+ Utils_GetEntityRoot_Patch.cs
+ Utils_PlayFMODAsset_Patch.cs
+ VehicleDockingBay_OnTriggerEnter.cs
+ VehicleDockingBay_OnUndockingComplete_Patch.cs
+ Vehicle_AddEnergy_Patch.cs
+ Vehicle_OnHandClick_Patch.cs
+ Vehicle_OnKill_Patch.cs
+ Vehicle_OnPilotModeBegin_Patch.cs
+ Vehicle_OnPilotModeEnd_Patch.cs
+ Vehicle_TorpedoShot_Patch.cs
+ Vehicle_UpdateEnergyRecharge_Patch.cs
+ WaterParkCreature_BornAsync_Patch.cs
+ WaterParkCreature_ManagedUpdate_Patch.cs
+ WaterParkCreature_ResetBreedTime_Patch.cs
+ WaterParkItem_ManagedUpdate_Patch.cs
+ WaterPark_Split_Patch.cs
+ WaterPark_TransferValue_Patch.cs
+ WeldableWallPanelGeneric_UnlockDoor_Patch.cs
+ Welder_Weld_Patch.cs
+Patches/
+ IDynamicPatch.cs
+ INitroxPatch.cs
+ IPersistentPatch.cs
+ NitroxPatch.cs
+ PacketSuppressorPatch.cs
+ Persistent/
+  Application_runInBackground_Patch.cs
+  CellManager_GetPrefabForSlot_Patch.cs
+  CellManager_TryLoadCacheBatchCells_Patch.cs
+  Enum_GetValues_Patch.cs
+  EscapePodFirstUseCinematicsController_OnSceneObjectsLoaded_Patch.cs
+  GameAnalytics_Patch.cs
+  GameInputSystem_Initialize_Patch.cs
+  Language_LoadLanguageFile_Patch.cs
+  MainGameController_StartGame_Patch.cs
+  MainMenuLoadButton_RestoreParentsSettings_Patch.cs
+  MainMenuRightSide_OpenGroup_Patch.cs
+  ProtobufSerializer_Deserialize_Patch.cs
+  ProtobufSerializer_Serialize_Patch.cs
+  ReefbackLife_OnEnable_Patch.cs
+  ScreenshotManager_Combine_Patch.cs
+  StartScreen_TryToShowDisclaimer_Patch.cs
+  uGUI_FeedbackCollector_IsEnabled_Patch.cs
+  uGUI_MainMenu_Start_Patch.cs
+  uGUI_OptionsPanel_AddAccessibilityTab_Patch.cs
+  uGUI_OptionsPanel_AddTabs_Patch.cs
+  uGUI_TabbedControlsPanel_AddBindingOption_Patch.cs
+  UnityEngine_SetupCoroutine_Patch.cs
+PatternMatching/
+ ILExtensions.cs
+ InstructionPattern.cs
+ InstructionsPattern.cs
+ OpCodePattern.cs
+ OperandPattern.cs
+Properties/AssemblyInfo.cs
+
+[metadataReferences]
+../
+ Nitrox.Model.Subnautica/bin/Debug/net472/Nitrox.Model.Subnautica.dll
+ NitroxClient/bin/Debug/net472/NitroxClient.dll
+<NETFXREF>/v4.7.2/
+ mscorlib.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+
+[analyzerReferences]
+<DOTNET>/sdk/8.0.126/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../.editorconfig
+obj/Debug/net472/NitroxPatcher.GeneratedMSBuildEditorConfig.editorconfig
