@@ -39,7 +39,7 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /highentropyva+
 /nullable:annotations
-/features:"InterceptorsNamespaces=;Nitrox.Analyzers.Interceptors;;Microsoft.Extensions.Validation.Generated;Nitrox.Analyzers.Interceptors"
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
 /debug+
 /debug:embedded
 /filealign:512
@@ -209,150 +209,8 @@ Views/
 
 [metadataReferences]
 ../
- Nitrox.Model.Subnautica/obj/Debug/net10.0/ref/Nitrox.Model.Subnautica.dll
  Nitrox.Model/obj/Debug/net10.0/ref/Nitrox.Model.dll
  Nitrox.Server.Subnautica/obj/Debug/net10.0/ref/Nitrox.Server.Subnautica.dll
-<DOTNET>/packs/Microsoft.AspNetCore.App.Ref/10.0.7/ref/net10.0/
- Microsoft.AspNetCore.Antiforgery.dll
- Microsoft.AspNetCore.Authentication.Abstractions.dll
- Microsoft.AspNetCore.Authentication.BearerToken.dll
- Microsoft.AspNetCore.Authentication.Cookies.dll
- Microsoft.AspNetCore.Authentication.Core.dll
- Microsoft.AspNetCore.Authentication.dll
- Microsoft.AspNetCore.Authentication.OAuth.dll
- Microsoft.AspNetCore.Authorization.dll
- Microsoft.AspNetCore.Authorization.Policy.dll
- Microsoft.AspNetCore.Components.Authorization.dll
- Microsoft.AspNetCore.Components.dll
- Microsoft.AspNetCore.Components.Endpoints.dll
- Microsoft.AspNetCore.Components.Forms.dll
- Microsoft.AspNetCore.Components.Server.dll
- Microsoft.AspNetCore.Components.Web.dll
- Microsoft.AspNetCore.Connections.Abstractions.dll
- Microsoft.AspNetCore.CookiePolicy.dll
- Microsoft.AspNetCore.Cors.dll
- Microsoft.AspNetCore.Cryptography.Internal.dll
- Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
- Microsoft.AspNetCore.DataProtection.Abstractions.dll
- Microsoft.AspNetCore.DataProtection.dll
- Microsoft.AspNetCore.DataProtection.Extensions.dll
- Microsoft.AspNetCore.Diagnostics.Abstractions.dll
- Microsoft.AspNetCore.Diagnostics.dll
- Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
- Microsoft.AspNetCore.dll
- Microsoft.AspNetCore.HostFiltering.dll
- Microsoft.AspNetCore.Hosting.Abstractions.dll
- Microsoft.AspNetCore.Hosting.dll
- Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
- Microsoft.AspNetCore.Html.Abstractions.dll
- Microsoft.AspNetCore.Http.Abstractions.dll
- Microsoft.AspNetCore.Http.Connections.Common.dll
- Microsoft.AspNetCore.Http.Connections.dll
- Microsoft.AspNetCore.Http.dll
- Microsoft.AspNetCore.Http.Extensions.dll
- Microsoft.AspNetCore.Http.Features.dll
- Microsoft.AspNetCore.Http.Results.dll
- Microsoft.AspNetCore.HttpLogging.dll
- Microsoft.AspNetCore.HttpOverrides.dll
- Microsoft.AspNetCore.HttpsPolicy.dll
- Microsoft.AspNetCore.Identity.dll
- Microsoft.AspNetCore.Localization.dll
- Microsoft.AspNetCore.Localization.Routing.dll
- Microsoft.AspNetCore.Metadata.dll
- Microsoft.AspNetCore.Mvc.Abstractions.dll
- Microsoft.AspNetCore.Mvc.ApiExplorer.dll
- Microsoft.AspNetCore.Mvc.Core.dll
- Microsoft.AspNetCore.Mvc.Cors.dll
- Microsoft.AspNetCore.Mvc.DataAnnotations.dll
- Microsoft.AspNetCore.Mvc.dll
- Microsoft.AspNetCore.Mvc.Formatters.Json.dll
- Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
- Microsoft.AspNetCore.Mvc.Localization.dll
- Microsoft.AspNetCore.Mvc.Razor.dll
- Microsoft.AspNetCore.Mvc.RazorPages.dll
- Microsoft.AspNetCore.Mvc.TagHelpers.dll
- Microsoft.AspNetCore.Mvc.ViewFeatures.dll
- Microsoft.AspNetCore.OutputCaching.dll
- Microsoft.AspNetCore.RateLimiting.dll
- Microsoft.AspNetCore.Razor.dll
- Microsoft.AspNetCore.Razor.Runtime.dll
- Microsoft.AspNetCore.RequestDecompression.dll
- Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
- Microsoft.AspNetCore.ResponseCaching.dll
- Microsoft.AspNetCore.ResponseCompression.dll
- Microsoft.AspNetCore.Rewrite.dll
- Microsoft.AspNetCore.Routing.Abstractions.dll
- Microsoft.AspNetCore.Routing.dll
- Microsoft.AspNetCore.Server.HttpSys.dll
- Microsoft.AspNetCore.Server.IIS.dll
- Microsoft.AspNetCore.Server.IISIntegration.dll
- Microsoft.AspNetCore.Server.Kestrel.Core.dll
- Microsoft.AspNetCore.Server.Kestrel.dll
- Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
- Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
- Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
- Microsoft.AspNetCore.Session.dll
- Microsoft.AspNetCore.SignalR.Common.dll
- Microsoft.AspNetCore.SignalR.Core.dll
- Microsoft.AspNetCore.SignalR.dll
- Microsoft.AspNetCore.SignalR.Protocols.Json.dll
- Microsoft.AspNetCore.StaticAssets.dll
- Microsoft.AspNetCore.StaticFiles.dll
- Microsoft.AspNetCore.WebSockets.dll
- Microsoft.AspNetCore.WebUtilities.dll
- Microsoft.Extensions.Caching.Abstractions.dll
- Microsoft.Extensions.Caching.Memory.dll
- Microsoft.Extensions.Configuration.Abstractions.dll
- Microsoft.Extensions.Configuration.Binder.dll
- Microsoft.Extensions.Configuration.CommandLine.dll
- Microsoft.Extensions.Configuration.dll
- Microsoft.Extensions.Configuration.EnvironmentVariables.dll
- Microsoft.Extensions.Configuration.FileExtensions.dll
- Microsoft.Extensions.Configuration.Ini.dll
- Microsoft.Extensions.Configuration.Json.dll
- Microsoft.Extensions.Configuration.KeyPerFile.dll
- Microsoft.Extensions.Configuration.UserSecrets.dll
- Microsoft.Extensions.Configuration.Xml.dll
- Microsoft.Extensions.DependencyInjection.Abstractions.dll
- Microsoft.Extensions.DependencyInjection.dll
- Microsoft.Extensions.Diagnostics.Abstractions.dll
- Microsoft.Extensions.Diagnostics.dll
- Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
- Microsoft.Extensions.Diagnostics.HealthChecks.dll
- Microsoft.Extensions.Features.dll
- Microsoft.Extensions.FileProviders.Abstractions.dll
- Microsoft.Extensions.FileProviders.Composite.dll
- Microsoft.Extensions.FileProviders.Embedded.dll
- Microsoft.Extensions.FileProviders.Physical.dll
- Microsoft.Extensions.FileSystemGlobbing.dll
- Microsoft.Extensions.Hosting.Abstractions.dll
- Microsoft.Extensions.Hosting.dll
- Microsoft.Extensions.Http.dll
- Microsoft.Extensions.Identity.Core.dll
- Microsoft.Extensions.Identity.Stores.dll
- Microsoft.Extensions.Localization.Abstractions.dll
- Microsoft.Extensions.Localization.dll
- Microsoft.Extensions.Logging.Abstractions.dll
- Microsoft.Extensions.Logging.Configuration.dll
- Microsoft.Extensions.Logging.Console.dll
- Microsoft.Extensions.Logging.Debug.dll
- Microsoft.Extensions.Logging.dll
- Microsoft.Extensions.Logging.EventLog.dll
- Microsoft.Extensions.Logging.EventSource.dll
- Microsoft.Extensions.Logging.TraceSource.dll
- Microsoft.Extensions.ObjectPool.dll
- Microsoft.Extensions.Options.ConfigurationExtensions.dll
- Microsoft.Extensions.Options.DataAnnotations.dll
- Microsoft.Extensions.Options.dll
- Microsoft.Extensions.Primitives.dll
- Microsoft.Extensions.Validation.dll
- Microsoft.Extensions.WebEncoders.dll
- Microsoft.JSInterop.dll
- Microsoft.Net.Http.Headers.dll
- System.Diagnostics.EventLog.dll
- System.Formats.Cbor.dll
- System.Security.Cryptography.Xml.dll
- System.Threading.RateLimiting.dll
 <DOTNET>/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/
  Microsoft.CSharp.dll
  Microsoft.VisualBasic.Core.dll
@@ -521,91 +379,8 @@ Views/
  System.Xml.XPath.dll
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
-<NUGET>/
- assetstools.net/3.0.0-preview1/lib/netstandard2.0/AssetsTools.NET.dll
- autofac/4.9.4/lib/netstandard2.0/Autofac.dll
- avalonia.controls.colorpicker/11.3.12/lib/net8.0/Avalonia.Controls.ColorPicker.dll
- avalonia.desktop/11.3.12/lib/net8.0/Avalonia.Desktop.dll
- avalonia.diagnostics/11.3.12/lib/net8.0/Avalonia.Diagnostics.dll
- avalonia.freedesktop/11.3.12/lib/net8.0/Avalonia.FreeDesktop.dll
- avalonia.native/11.3.12/lib/net8.0/Avalonia.Native.dll
- avalonia.remote.protocol/11.3.12/lib/net8.0/Avalonia.Remote.Protocol.dll
- avalonia.skia/11.3.12/lib/net8.0/Avalonia.Skia.dll
- avalonia.svg.skia/11.3.0/lib/net8.0/Avalonia.Svg.Skia.dll
- avalonia.themes.fluent/11.3.12/lib/net8.0/Avalonia.Themes.Fluent.dll
- avalonia.themes.simple/11.3.12/lib/net8.0/Avalonia.Themes.Simple.dll
- avalonia.win32/11.3.12/lib/net8.0/
-  Avalonia.Win32.Automation.dll
-  Avalonia.Win32.dll
- avalonia.x11/11.3.12/lib/net8.0/Avalonia.X11.dll
- avalonia.xaml.interactions/11.3.0.6/lib/net8.0/Avalonia.Xaml.Interactions.dll
- avalonia.xaml.interactivity/11.3.0.6/lib/net8.0/Avalonia.Xaml.Interactivity.dll
- avalonia/11.3.12/ref/net8.0/
-  Avalonia.Base.dll
-  Avalonia.Controls.dll
-  Avalonia.DesignerSupport.dll
-  Avalonia.Dialogs.dll
-  Avalonia.dll
-  Avalonia.Markup.dll
-  Avalonia.Markup.Xaml.dll
-  Avalonia.Metal.dll
-  Avalonia.MicroCom.dll
-  Avalonia.OpenGL.dll
-  Avalonia.Vulkan.dll
- communitytoolkit.mvvm/8.4.2/lib/net8.0/CommunityToolkit.Mvvm.dll
- dnlib/4.4.0/lib/net6.0/dnlib.dll
- excss/4.3.0/lib/net8.0/ExCSS.dll
- grpc.aspnetcore.server/2.57.0/lib/net8.0/Grpc.AspNetCore.Server.dll
- grpc.core.api/2.57.0/lib/netstandard2.1/Grpc.Core.Api.dll
- grpc.net.client/2.57.0/lib/net8.0/Grpc.Net.Client.dll
- grpc.net.common/2.57.0/lib/net8.0/Grpc.Net.Common.dll
- harfbuzzsharp/8.3.1.1/lib/net8.0/HarfBuzzSharp.dll
- jetbrains.annotations/2024.3.0/lib/netstandard2.0/JetBrains.Annotations.dll
-  @aliases=JB
- litenetlib/1.3.5/lib/net8.0/LiteNetLib.dll
- litjson/0.19.0/lib/net8.0/LitJSON.dll
- magiconion.abstractions/7.0.6/lib/net8.0/MagicOnion.Abstractions.dll
- magiconion.client/7.0.6/lib/net9.0/MagicOnion.Client.dll
- magiconion.serialization.messagepack/7.0.6/lib/net8.0/MagicOnion.Serialization.MessagePack.dll
- magiconion.server/7.0.6/lib/net9.0/MagicOnion.Server.dll
- magiconion.shared/7.0.6/lib/net8.0/MagicOnion.Shared.dll
- messagepack.annotations/3.1.1/lib/netstandard2.0/MessagePack.Annotations.dll
- messagepack/3.1.1/lib/net9.0/MessagePack.dll
- microcom.runtime/0.11.0/lib/net5.0/MicroCom.Runtime.dll
- mono.cecil/0.11.3/lib/netstandard2.0/
-  Mono.Cecil.dll
-  Mono.Cecil.Mdb.dll
-  Mono.Cecil.Pdb.dll
-  Mono.Cecil.Rocks.dll
- mono.nat/3.0.4/lib/net6.0/Mono.Nat.dll
- multicaster/2.1.1/lib/net9.0/Cysharp.Runtime.Multicaster.dll
- newtonsoft.json/12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
- nitrox.binarypack/2.0.1/lib/net7.0/BinaryPack.dll
- serilog.sinks.async/2.1.0/lib/net8.0/Serilog.Sinks.Async.dll
- serilog.sinks.file/6.0.0/lib/net8.0/Serilog.Sinks.File.dll
- serilog.sinks.map/2.0.0/lib/net8.0/Serilog.Sinks.Map.dll
- serilog/4.2.0/lib/net9.0/Serilog.dll
- shimskiasharp/3.0.2/lib/net8.0/ShimSkiaSharp.dll
- sixlabors.imagesharp/2.1.11/lib/netcoreapp3.1/SixLabors.ImageSharp.dll
- skiasharp.harfbuzz/3.116.1/lib/net8.0/SkiaSharp.HarfBuzz.dll
- skiasharp/3.116.1/ref/net8.0/SkiaSharp.dll
- svg.custom/3.0.2/lib/net8.0/Svg.Custom.dll
- svg.model/3.0.2/lib/net8.0/Svg.Model.dll
- svg.skia/3.0.2/lib/net8.0/Svg.Skia.dll
- system.io.hashing/8.0.0/lib/net8.0/System.IO.Hashing.dll
- tmds.dbus.protocol/0.21.2/lib/net8.0/Tmds.DBus.Protocol.dll
- utf8stringinterpolation/1.3.1/lib/net8.0/Utf8StringInterpolation.dll
- zlogger/2.5.10/lib/net8.0/ZLogger.dll
 
 [analyzerReferences]
-<DOTNET>/packs/Microsoft.AspNetCore.App.Ref/10.0.7/analyzers/dotnet/cs/
- Microsoft.AspNetCore.App.Analyzers.dll
- Microsoft.AspNetCore.App.CodeFixes.dll
- Microsoft.AspNetCore.App.SourceGenerators.dll
- Microsoft.AspNetCore.Components.Analyzers.dll
- Microsoft.Extensions.Logging.Generators.dll
- Microsoft.Extensions.Options.SourceGeneration.dll
- Microsoft.Extensions.Validation.ValidationsGenerator.dll
 <DOTNET>/packs/Microsoft.NETCore.App.Ref/10.0.7/analyzers/dotnet/cs/
  Microsoft.Interop.ComInterfaceGenerator.dll
  Microsoft.Interop.JavaScript.JSImportGenerator.dll
@@ -616,60 +391,8 @@ Views/
 <DOTNET>/sdk/10.0.203/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/avalonia/11.3.12/analyzers/dotnet/cs/
- Avalonia.Analyzers.dll
- Avalonia.Generators.dll
-<NUGET>/communitytoolkit.mvvm/8.4.2/analyzers/dotnet/roslyn5.0/cs/
- CommunityToolkit.Mvvm.CodeFixers.dll
- CommunityToolkit.Mvvm.SourceGenerators.dll
-<NUGET>/
- consoleappframework/5.6.1/analyzers/dotnet/cs/ConsoleAppFramework.dll
- magiconion.client/7.0.6/analyzers/dotnet/roslyn4.3/cs/MagicOnion.Client.SourceGenerator.dll
- messagepackanalyzer/3.1.1/analyzers/roslyn4.3/cs/
-  MessagePack.Analyzers.CodeFixes.dll
-  MessagePack.SourceGenerator.dll
- nitrox.analyzers/1.0.13/analyzers/dotnet/cs/Nitrox.Analyzers.dll
- polysharp/1.15.0/analyzers/dotnet/cs/PolySharp.SourceGenerators.dll
- servicescan.sourcegenerator/2.4.1/analyzers/dotnet/cs/ServiceScan.SourceGenerator.dll
- zlogger/2.5.10/analyzers/dotnet/roslyn4.3/cs/ZLogger.Generator.dll
 
 [analyzerConfigFiles]
 ../.editorconfig
 <DOTNET>/sdk/10.0.203/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 obj/Debug/net10.0/Nitrox.Launcher.GeneratedMSBuildEditorConfig.editorconfig
-
-[additionalFiles]
-App.axaml
-Models/
- Controls/CustomTitlebar.axaml
- Styles/
-  Nitrox.axaml
-  Palette/Nitrox.axaml
-  Theme/
-   ButtonStyle.axaml
-   CheckBoxStyle.axaml
-   ComboBoxStyle.axaml
-   ExpanderStyle.axaml
-   RadioButtonGroupStyle.axaml
-   RadioButtonStyle.axaml
-   ScrollViewerStyle.axaml
-   TextBlockStyle.axaml
-   TextBoxStyle.axaml
-   ToolTipStyle.axaml
-   ValidationErrorsStyle.axaml
-Views/
- BackupRestoreModal.axaml
- BlogView.axaml
- CommunityView.axaml
- CrashWindow.axaml
- CreateServerModal.axaml
- DialogBoxModal.axaml
- EmbeddedServerView.axaml
- LaunchGameView.axaml
- LibraryView.axaml
- MainWindow.axaml
- ManageServerView.axaml
- ObjectPropertyEditorModal.axaml
- OptionsView.axaml
- ServersView.axaml
- UpdatesView.axaml
