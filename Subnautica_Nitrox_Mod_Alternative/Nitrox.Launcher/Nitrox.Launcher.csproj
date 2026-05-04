@@ -137,6 +137,13 @@
 
     <Import Project="..\Nitrox.Shared.targets" />
 
+
+
+    <!-- Tells the .NET runtime to look in the 'lib' subfolder for assemblies -->
+    <!-- <PropertyGroup>
+        <AdditionalProbingPaths>lib</AdditionalProbingPaths>
+    </PropertyGroup>
+
     <Target Name="ForceModelToRoot" AfterTargets="Build">
     <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
           DestinationFolder="$(OutputPath)" 
@@ -145,13 +152,9 @@
     </Target>
     
     <PropertyGroup>
-        <!-- Tells the .NET runtime to look in the 'lib' subfolder for assemblies -->
-        <AdditionalProbingPaths>lib</AdditionalProbingPaths>
-    </PropertyGroup>
-
-    <PropertyGroup>
         <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
         <UserRuntimeConfig>$(MSBuildProjectDirectory)\runtimeconfig.template.json</UserRuntimeConfig>
-    </PropertyGroup>
+    </PropertyGroup> -->
     
+
 </Project>

@@ -4,7 +4,7 @@
   <assembly fullname="Avalonia.Themes.Fluent" preserve="All" />
 
   <!-- Add this to stop the 'Method not found' crash in Release mode -->
-  <assembly fullname="Nitrox.Model">
+  <!-- <assembly fullname="Nitrox.Model">
     <type fullname="Nitrox.Model.Platforms.OS.Shared.ProcessEx" preserve="all" />
-  </assembly>
+  </assembly> -->
 </linker>
