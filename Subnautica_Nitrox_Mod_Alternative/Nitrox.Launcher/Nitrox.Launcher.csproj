@@ -139,14 +139,6 @@
 
 
 
-    <Target Name="ForceModelToRoot" AfterTargets="Build">
-        <Message Importance="High" Text="Force copying Nitrox.Model.dll to root for Release stability..." />
-        <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
-            DestinationFolder="$(OutputPath)" 
-            OverwriteReadOnlyFiles="true" 
-            SkipUnchangedFiles="false"
-            Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
-    </Target>
 
     <!-- Tells the .NET runtime to look in the 'lib' subfolder for assemblies -->
     <!-- <PropertyGroup>
@@ -164,6 +156,30 @@
         <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
         <UserRuntimeConfig>$(MSBuildProjectDirectory)\runtimeconfig.template.json</UserRuntimeConfig>
     </PropertyGroup> -->
+
+
+    <!-- <Target Name="ForceModelToRoot" AfterTargets="Build">
+        <Message Importance="High" Text="Force copying Nitrox.Model.dll to root for Release stability..." />
+        <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
+            DestinationFolder="$(OutputPath)" 
+            OverwriteReadOnlyFiles="true" 
+            SkipUnchangedFiles="false"
+            Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
+    </Target> -->
+
+    
+    <Target Name="ForceModelToRoot" AfterTargets="$(_NitroxMoveDependenciesToLibTaskName)">
+        <Message Importance="High" Text="-- FORCE COPYING Nitrox.Model.dll TO ROOT --" />
+        
+        <ItemGroup>
+            <SourceModelDll Include="$(TargetDir)lib\Nitrox.Model.dll" />
+        </ItemGroup>
+
+        <Copy SourceFiles="@(SourceModelDll)" 
+            DestinationFolder="$(TargetDir)" 
+            OverwriteReadOnlyFiles="true" 
+            SkipUnchangedFiles="false" />
+    </Target>
     
 
 </Project>
