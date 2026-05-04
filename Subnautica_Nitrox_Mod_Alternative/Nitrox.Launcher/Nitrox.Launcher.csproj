@@ -148,4 +148,10 @@
         <!-- Tells the .NET runtime to look in the 'lib' subfolder for assemblies -->
         <AdditionalProbingPaths>lib</AdditionalProbingPaths>
     </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <UserRuntimeConfig>$(MSBuildProjectDirectory)\runtimeconfig.template.json</UserRuntimeConfig>
+    </PropertyGroup>
+    
 </Project>

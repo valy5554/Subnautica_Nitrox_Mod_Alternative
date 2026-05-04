@@ -99,7 +99,7 @@ public class ProcessEx : IDisposable
         return From(startInfo);
     }
 
-#if NET || NET472
+#if NET
     public static Process? StartProcessDetached(ProcessStartInfo startInfo)
     {
         if (!string.IsNullOrWhiteSpace(startInfo.Arguments))
