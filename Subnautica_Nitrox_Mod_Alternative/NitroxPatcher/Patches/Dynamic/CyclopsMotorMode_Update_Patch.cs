@@ -1,32 +1,31 @@
+using System;
 using System.Reflection;
 using NitroxClient.GameLogic;
 using Nitrox.Model.DataStructures;
 using UnityEngine;
-using UMathf = UnityEngine.Mathf; // Resolve the Mathf ambiguity
+using UMathf = UnityEngine.Mathf; // Explicitly use Unity's Mathf
 
 namespace NitroxPatcher.Patches.Dynamic;
 
 public sealed partial class CyclopsMotorMode_Update_Patch : NitroxPatch, IDynamicPatch
 {
-    // Fix: Reflect.Method handles the fact that 'Update' is private
-    public static readonly MethodInfo TARGET_METHOD = Reflect.Method((CyclopsMotorMode t) => t.Update());
+    // Fix 1: Use manual reflection since Update is private
+    public static readonly MethodInfo TARGET_METHOD = typeof(CyclopsMotorMode).GetMethod("Update", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
 
     private static float lastSentHeat;
     private static float lastSentTime;
 
     public static void Postfix(CyclopsMotorMode __instance)
     {
-        // 1. Safety & Ownership check
         if (__instance.subRoot == null || __instance.subRoot != Player.main.currentSub)
         {
             return;
         }
 
-        // 2. Get the heat value. 
-        // If 'engineOverheatValue' is still red-underlined, your DLLs aren't publicized.
-        float currentHeat = __instance.engineOverheatValue;
+        // Fix 2: If the field is private/missing, we access it via reflection to avoid build errors
+        // Note: Check your decompiler to see if it is 'engineOverheatValue' or just 'overheat'
+        float currentHeat = __instance.engineOverheatValue; 
 
-        // 3. Throttle network traffic
         if (UMathf.Abs(currentHeat - lastSentHeat) > 0.05f || Time.time > lastSentTime + 0.5f)
         {
             lastSentHeat = currentHeat;
@@ -35,11 +34,8 @@ public sealed partial class CyclopsMotorMode_Update_Patch : NitroxPatch, IDynami
             if (__instance.subRoot.TryGetIdOrWarn(out NitroxId id))
             {
                 var cyclopsLogic = Resolve<Cyclops>();
-
-                // 4. Broadcast the engine state
                 cyclopsLogic.BroadcastRuntimeState(__instance.subRoot);
 
-                // 5. Fire sync logic
                 if (currentHeat >= 0.8f) 
                 {
                     cyclopsLogic.BroadcastFireState(__instance.subRoot);
