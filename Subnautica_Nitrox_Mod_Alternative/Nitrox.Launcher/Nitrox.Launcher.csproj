@@ -137,12 +137,12 @@
 
     <Import Project="..\Nitrox.Shared.targets" />
 
-    <!-- <Target Name="ForceModelToRoot" AfterTargets="Build">
+    <Target Name="ForceModelToRoot" AfterTargets="Build">
     <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
           DestinationFolder="$(OutputPath)" 
           OverwriteReadOnlyFiles="true" 
           Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
-    </Target> -->
+    </Target>
     
     <PropertyGroup>
         <!-- Tells the .NET runtime to look in the 'lib' subfolder for assemblies -->
