@@ -28,14 +28,16 @@ public static class CyclopsMotorMode_Update_Patch
             lastSentHeat = currentHeat;
             lastSentTime = Time.time;
 
-            // This triggers the BroadcastRuntimeState method in your Cyclops.cs
-            NitroxPatch.Resolve<Cyclops>().BroadcastRuntimeState(__instance.subRoot);
+            // 3. Resolve the logic instance
+            var cyclopsLogic = NitroxPatch.Resolve<Cyclops>();
 
-            // CRITICAL: If heat is high enough to cause fire, force a damage sync
-            // Your Cyclops.cs GetActiveRoomFires() will now pick up the new fires
+            // 4. Sync general engine state
+            cyclopsLogic.BroadcastRuntimeState(__instance.subRoot);
+
+            // 5. If overheating, sync the fires detected by your new GetActiveRoomFires
             if (currentHeat >= 0.8f) 
             {
-                NitroxPatch.Resolve<Cyclops>().OnCreateDamagePoint(__instance.subRoot);
+                cyclopsLogic.BroadcastFireState(__instance.subRoot);
             }
         }
     }

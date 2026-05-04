@@ -336,18 +336,27 @@ namespace NitroxClient.GameLogic
                 {
                     if (roomFire.Value.spawnNodes[i].TryGetComponentInChildren(out Fire fireComponent))
                     {
-                        // Use TryGetId without the 'OrWarn' to avoid log spam for new fires
-                        if (fireComponent.gameObject.TryGetId(out NitroxId fireId))
+                        var identifier = fireComponent.GetComponent<NitroxIdentifier>();
+                        if (identifier != null && identifier.Id != null)
                         {
+                            NitroxId fireId = identifier.Id;
                             yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
                         }
-                        else 
-                        {
-                            // The fire exists but doesn't have a network ID yet.
-                            // We skip it for this frame. The next update (0.5s later) 
-                            // will catch it once the ID is assigned.
-                            continue; 
-                        }
+
+                        // // Use TryGetId without the 'OrWarn' to avoid log spam for new fires
+                        // if (fireComponent.gameObject.TryGetId(out NitroxId fireId))
+                        // {
+                        //     yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
+                        // }
+                        // else 
+                        // {
+                        //     // The fire exists but doesn't have a network ID yet.
+                        //     // We skip it for this frame. The next update (0.5s later) 
+                        //     // will catch it once the ID is assigned.
+                        //     continue; 
+                        // }
+                        // Manual lookup if the extension method 'TryGetId' is missing in your branch
+
                     }
                 }
             }
@@ -361,7 +370,9 @@ namespace NitroxClient.GameLogic
         /// </summary>
         public void BroadcastFireState(SubRoot subRoot)
         {
-            BroadcastDamageState(subRoot, Optional<DamageInfo>.None);
+            // You must use Optional.Empty (from the static class) 
+            // instead of Optional<T>.None or .Empty
+            BroadcastDamageState(subRoot, Optional.Empty); 
         }
     }
 }
