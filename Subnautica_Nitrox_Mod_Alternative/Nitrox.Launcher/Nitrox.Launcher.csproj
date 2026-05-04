@@ -135,42 +135,7 @@
         <Content Include="..\Nitrox.Assets.Subnautica\AssetBundles\**" LinkBase="Resources\AssetBundles" CopyToOutputDirectory="PreserveNewest" Visible="false" />
     </ItemGroup>
 
-    <Import Project="..\Nitrox.Shared.targets" />
 
-
-
-
-    <!-- Tells the .NET runtime to look in the 'lib' subfolder for assemblies -->
-    <!-- <PropertyGroup>
-        <AdditionalProbingPaths>lib</AdditionalProbingPaths>
-    </PropertyGroup>
-
-    <Target Name="ForceModelToRoot" AfterTargets="Build">
-    <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
-          DestinationFolder="$(OutputPath)" 
-          OverwriteReadOnlyFiles="true" 
-          Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
-    </Target>
     
-    <PropertyGroup>
-        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-        <UserRuntimeConfig>$(MSBuildProjectDirectory)\runtimeconfig.template.json</UserRuntimeConfig>
-    </PropertyGroup> -->
-
-
-    <!-- <Target Name="ForceModelToRoot" AfterTargets="Build">
-        <Message Importance="High" Text="Force copying Nitrox.Model.dll to root for Release stability..." />
-        <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
-            DestinationFolder="$(OutputPath)" 
-            OverwriteReadOnlyFiles="true" 
-            SkipUnchangedFiles="false"
-            Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
-    </Target> -->
-
-   
-    <!-- <PropertyGroup>
-        <PublishTrimmed>false</PublishTrimmed>
-        <TrimMode>none</TrimMode>
-    </PropertyGroup> -->
 
 </Project>
