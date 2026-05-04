@@ -136,4 +136,11 @@
     </ItemGroup>
 
     <Import Project="..\Nitrox.Shared.targets" />
+
+    <Target Name="ForceModelToRoot" AfterTargets="Build">
+    <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
+          DestinationFolder="$(OutputPath)" 
+          OverwriteReadOnlyFiles="true" 
+          Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
+    </Target>
 </Project>
