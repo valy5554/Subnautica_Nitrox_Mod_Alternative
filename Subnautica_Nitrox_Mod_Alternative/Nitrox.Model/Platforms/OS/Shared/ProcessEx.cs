@@ -99,8 +99,8 @@ public class ProcessEx : IDisposable
         return From(startInfo);
     }
 
-#if NET
 
+#if NET472 || NET10_0_OR_GREATER
     public static Process? StartProcessDetached(ProcessStartInfo startInfo)
     {
         if (!string.IsNullOrWhiteSpace(startInfo.Arguments))
@@ -126,8 +126,7 @@ public class ProcessEx : IDisposable
     /// <summary>
     ///     Starts the current app as a new instance.
     /// </summary>
-    //public static void StartSelf(params string[] arguments)
-    public static void StartSelf(string[] arguments)
+    public static void StartSelf(params string[] arguments)
     {
         string executableFilePath = Helper.NitroxUser.ExecutableFilePath ?? Environment.ProcessPath;
         // On Linux, entry assembly is .dll file but real executable is without extension.
