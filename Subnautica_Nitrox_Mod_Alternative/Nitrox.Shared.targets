@@ -76,6 +76,23 @@
             <ExcludeFiles Include="$(TargetDir)%(ExecutablesBaseName.Identity).dll;$(TargetDir)%(ExecutablesBaseName.Identity).dll.config" />
             <ExcludeFiles Include="$(TargetDir)%(ExecutablesBaseName.Identity).runtimeconfig.json" />
             <ExcludeFiles Include="$(TargetDir)%(ExecutablesBaseName.Identity).deps.json" />
+
+
+
+            <!-- 1. Protect the Executable files -->
+            <ExcludeFiles Include="$(TargetDir)%(ExecutablesBaseName.Identity).*" />
+            <ExcludeFiles Include="$(TargetDir)%(ExecutablesBaseName.Identity).exe" />
+            <!-- 2. PROTECT AVALONIA (Fixes the "Unloaded" error from image_3a5901.png) -->
+            <!-- If these move, Visual Studio can't find the XAML compiler -->
+            <ExcludeFiles Include="$(TargetDir)Avalonia*" />
+
+            <!-- 3. PROTECT THE MODEL (Fixes the Release crash/MissingMethod) -->
+            <!-- The Launcher needs this immediately at boot -->
+            <ExcludeFiles Include="$(TargetDir)Nitrox.Model.dll" />
+
+
+            
+
             <ExcludeFiles Include="$(TargetDir)*.dylib;$(TargetDir)*.so" />
             <ExcludeFiles Include="$(TargetDir)*.cfg" />
 
