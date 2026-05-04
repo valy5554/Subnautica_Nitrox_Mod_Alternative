@@ -11,6 +11,10 @@
         <ApplicationIcon>Assets\Images\nitrox-icon.ico</ApplicationIcon>
         <PublishTrimmed>false</PublishTrimmed>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+
+        
+        <Optimize>false</Optimize>
+
     </PropertyGroup>
 
     <PropertyGroup>

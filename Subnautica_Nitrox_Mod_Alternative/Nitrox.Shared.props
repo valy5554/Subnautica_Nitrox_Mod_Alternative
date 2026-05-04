@@ -8,6 +8,8 @@
         <_IsWindows>$([System.OperatingSystem]::IsWindows())</_IsWindows>
         <_IsLinux>$([System.OperatingSystem]::IsLinux())</_IsLinux>
         <_IsMacOS>$([System.OperatingSystem]::IsMacOS())</_IsMacOS>
+
+        <Optimize>false</Optimize>
         
         <!-- Current project build configuration -->
         <_IsRelease>$([System.String]::Equals($(Configuration), 'Release'))</_IsRelease>

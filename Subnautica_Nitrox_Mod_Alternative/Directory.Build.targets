@@ -3,6 +3,9 @@
 
     <PropertyGroup>
         <_GitShortHashFilePath>$(IntermediateOutputPath)git_short_hash.cache</_GitShortHashFilePath>
+
+        <Optimize>false</Optimize>
+        
     </PropertyGroup>
 
     <Target Name="_CreateGitShortHashCacheFile" Inputs="$(_GitRefHashFilePath)" Outputs="$(_GitShortHashFilePath)" Condition="Exists('$(_GitRefHashFilePath)')">
