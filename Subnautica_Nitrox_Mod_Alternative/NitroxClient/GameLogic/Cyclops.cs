@@ -11,6 +11,9 @@ using Nitrox.Model.Subnautica.Packets;
 using UnityEngine;
 using static NitroxClient.GameLogic.Spawning.Metadata.Extractor.CyclopsMetadataExtractor;
 
+using NitroxClient.Common; // Ensure this is present for Optional
+using NitroxClient.Extensions;
+
 namespace NitroxClient.GameLogic
 {
     public class Cyclops
@@ -332,13 +335,10 @@ namespace NitroxClient.GameLogic
 
                 for (int i = 0; i < roomFire.Value.spawnNodes.Length; i++)
                 {
-                    // Check if there is a fire object attached to this node
-                    Fire fireComponent = roomFire.Value.spawnNodes[i].GetComponentInChildren<Fire>();
-                    
-                    if (fireComponent != null)
+                    if (roomFire.Value.spawnNodes[i].TryGetComponentInChildren(out Fire fireComponent))
                     {
                         // Use TryGetId without the 'OrWarn' to avoid log spam for new fires
-                        if (fireComponent.TryGetId(out NitroxId fireId))
+                        if (fireComponent.gameObject.TryGetId(out NitroxId fireId))
                         {
                             yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
                         }
@@ -362,7 +362,7 @@ namespace NitroxClient.GameLogic
         /// </summary>
         public void BroadcastFireState(SubRoot subRoot)
         {
-            BroadcastDamageState(subRoot, Optional<DamageInfo>.Empty);
+            BroadcastDamageState(subRoot, Optional<DamageInfo>.None);
         }
     }
 }
