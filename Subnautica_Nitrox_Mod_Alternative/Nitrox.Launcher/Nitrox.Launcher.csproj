@@ -135,5 +135,10 @@
         <Content Include="..\Nitrox.Assets.Subnautica\AssetBundles\**" LinkBase="Resources\AssetBundles" CopyToOutputDirectory="PreserveNewest" Visible="false" />
     </ItemGroup>
 
+    <ItemGroup>
+        <!-- Explicitly update the vulnerable package -->
+        <PackageReference Include="Tmds.DBus.Protocol" Version="0.21.3" />
+    </ItemGroup>
+
     <Import Project="..\Nitrox.Shared.targets" />
 </Project>
