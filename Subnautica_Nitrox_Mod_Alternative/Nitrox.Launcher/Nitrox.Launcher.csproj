@@ -167,18 +167,29 @@
             Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
     </Target> -->
 
-    
+
+    <Import Project="..\Nitrox.Shared.targets" />
+
+    <!-- 
+        We use AfterTargets="$(_NitroxMoveDependenciesToLibTaskName)" because 
+        Nitrox.Shared.targets defines this variable to move DLLs into /lib.
+        We wait for it to finish, then copy the Model back to the root.
+    -->
     <Target Name="ForceModelToRoot" AfterTargets="$(_NitroxMoveDependenciesToLibTaskName)">
-        <Message Importance="High" Text="-- FORCE COPYING Nitrox.Model.dll TO ROOT --" />
+        <Message Importance="High" Text="[Nitrox Fix] -- FORCE COPYING Nitrox.Model.dll TO ROOT --" />
         
         <ItemGroup>
-            <SourceModelDll Include="$(TargetDir)lib\Nitrox.Model.dll" />
+            <SourceModelDll Include="$(OutputPath)lib\Nitrox.Model.dll" />
         </ItemGroup>
 
+        <!-- Use MSBuild Copy with high priority -->
         <Copy SourceFiles="@(SourceModelDll)" 
-            DestinationFolder="$(TargetDir)" 
-            OverwriteReadOnlyFiles="true" 
-            SkipUnchangedFiles="false" />
+              DestinationFolder="$(OutputPath)" 
+              OverwriteReadOnlyFiles="true" 
+              SkipUnchangedFiles="false" />
+              
+        <!-- Verification message in the build log -->
+        <Message Importance="High" Text="[Nitrox Fix] Successfully copied @(SourceModelDll) to $(OutputPath)" />
     </Target>
     
 
