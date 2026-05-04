@@ -11,8 +11,7 @@ using Nitrox.Model.Subnautica.Packets;
 using UnityEngine;
 using static NitroxClient.GameLogic.Spawning.Metadata.Extractor.CyclopsMetadataExtractor;
 
-using NitroxClient.Common; // Ensure this is present for Optional
-using NitroxClient.Extensions;
+
 
 namespace NitroxClient.GameLogic
 {
