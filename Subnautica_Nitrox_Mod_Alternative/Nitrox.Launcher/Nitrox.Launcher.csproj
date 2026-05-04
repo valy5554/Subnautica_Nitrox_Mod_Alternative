@@ -192,5 +192,9 @@
         <Message Importance="High" Text="[Nitrox Fix] Successfully copied @(SourceModelDll) to $(OutputPath)" />
     </Target>
     
+    <PropertyGroup>
+        <PublishTrimmed>false</PublishTrimmed>
+        <TrimMode>none</TrimMode>
+    </PropertyGroup>
 
 </Project>
