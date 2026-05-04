@@ -98,7 +98,7 @@
               ContinueOnError="ErrorAndContinue" />
 
         <!-- Move every matching files to OutputDirectory -->
-        <Copy SourceFiles="@(FilesToMove)"
+        <Move SourceFiles="@(FilesToMove)"
               DestinationFolder="$(OutputDirectory)"
               OverwriteReadOnlyFiles="True" 
               Condition="'$(Configuration)' == 'Release'"
