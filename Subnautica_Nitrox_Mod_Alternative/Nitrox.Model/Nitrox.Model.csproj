@@ -48,10 +48,9 @@
         </Otherwise>
     </Choose>
 
-    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <!-- <PropertyGroup Condition="'$(Configuration)' == 'Release'">
         <Optimize>true</Optimize>
-        <!-- This prevents .NET from 'Trimming' code it thinks is unused -->
         <PublishTrimmed>false</PublishTrimmed> 
         <TrimMode>none</TrimMode>
-    </PropertyGroup>
+    </PropertyGroup> -->
 </Project>
