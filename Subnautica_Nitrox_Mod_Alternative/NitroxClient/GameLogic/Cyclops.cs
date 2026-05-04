@@ -334,29 +334,16 @@ namespace NitroxClient.GameLogic
 
                 for (int i = 0; i < roomFire.Value.spawnNodes.Length; i++)
                 {
-                    if (roomFire.Value.spawnNodes[i].TryGetComponentInChildren(out Fire fireComponent))
+                    Fire fireComponent = roomFire.Value.spawnNodes[i].GetComponentInChildren<Fire>();
+                    
+                    if (fireComponent != null)
                     {
-                        var identifier = fireComponent.GetComponent<NitroxIdentifier>();
-                        if (identifier != null && identifier.Id != null)
+                        // In Nitrox, TryGetId is usually an extension method on 'GameObject'
+                        // If this is red-underlined, press Ctrl+. to see suggested usings.
+                        if (fireComponent.gameObject.TryGetIdOrWarn(out NitroxId fireId))
                         {
-                            NitroxId fireId = identifier.Id;
                             yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
                         }
-
-                        // // Use TryGetId without the 'OrWarn' to avoid log spam for new fires
-                        // if (fireComponent.gameObject.TryGetId(out NitroxId fireId))
-                        // {
-                        //     yield return new CyclopsFireData(fireId, subRootId, roomFire.Key, i);
-                        // }
-                        // else 
-                        // {
-                        //     // The fire exists but doesn't have a network ID yet.
-                        //     // We skip it for this frame. The next update (0.5s later) 
-                        //     // will catch it once the ID is assigned.
-                        //     continue; 
-                        // }
-                        // Manual lookup if the extension method 'TryGetId' is missing in your branch
-
                     }
                 }
             }
