@@ -135,7 +135,5 @@
         <Content Include="..\Nitrox.Assets.Subnautica\AssetBundles\**" LinkBase="Resources\AssetBundles" CopyToOutputDirectory="PreserveNewest" Visible="false" />
     </ItemGroup>
 
-
-    
-
+    <Import Project="..\Nitrox.Shared.targets" />
 </Project>
