@@ -139,6 +139,15 @@
 
 
 
+    <Target Name="ForceModelToRoot" AfterTargets="Build">
+        <Message Importance="High" Text="Force copying Nitrox.Model.dll to root for Release stability..." />
+        <Copy SourceFiles="$(OutputPath)lib\Nitrox.Model.dll" 
+            DestinationFolder="$(OutputPath)" 
+            OverwriteReadOnlyFiles="true" 
+            SkipUnchangedFiles="false"
+            Condition="Exists('$(OutputPath)lib\Nitrox.Model.dll')" />
+    </Target>
+
     <!-- Tells the .NET runtime to look in the 'lib' subfolder for assemblies -->
     <!-- <PropertyGroup>
         <AdditionalProbingPaths>lib</AdditionalProbingPaths>
