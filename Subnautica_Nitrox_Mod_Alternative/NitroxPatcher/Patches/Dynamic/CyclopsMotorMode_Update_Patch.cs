@@ -18,36 +18,61 @@ public sealed partial class CyclopsMotorMode_Update_Patch : NitroxPatch, IDynami
 
     public static void Postfix(CyclopsMotorMode __instance)
     {
-        // 1. Ownership & Validity Check
-        // Only the local player driving/owning the sub should broadcast to prevent redundant packets
-        if (__instance.subRoot == null || !__instance.subRoot.isControllable)
+        // 1. Better Authority Check
+        SubRoot cyclops = __instance.subRoot;
+        if (cyclops == null || cyclops != Player.main.currentSub) return;
+
+        // Use the HUD as the 'isControllable' replacement
+        CyclopsHelmHUDManager hud = cyclops.gameObject.GetComponentInChildren<CyclopsHelmHUDManager>();
+        if (hud == null || !hud.hudActive || !hud.hornObject.activeSelf)
         {
-            return;
+            return; // Not the pilot, don't send data
         }
 
-        if (!__instance.subRoot.TryGetIdOrWarn(out NitroxId id)) return;
+        if (!cyclops.TryGetIdOrWarn(out NitroxId id)) return;
 
-        // 2. Throttle Logic (running at ~2Hz)
-        // We use a dictionary to ensure multiple Cyclops vessels don't interfere with each other's timers
-        lastSentHeatMap.TryGetValue(id, out float lastSentHeat);
-        
-        // We can simplify this: if the sub is on Flank or has heat, sync more often.
-        bool needsSync = Time.time > lastGlobalSentTime + 0.5f;
-
-        if (needsSync)
+        // 2. Throttle & Sync
+        if (Time.time > lastGlobalSentTime + 0.5f)
         {
             lastGlobalSentTime = Time.time;
-
-            var cyclopsLogic = Resolve<Cyclops>();
-            
-            // 3. Sync General State
-            // This method already handles:
-            // - Reflection to get heat from CyclopsMotorMode
-            // - Logic for 'overheat' and 'critical' booleans
-            // - Checking for active fires in SubFire
-            cyclopsLogic.BroadcastRuntimeState(__instance.subRoot);
+            Resolve<Cyclops>().BroadcastRuntimeState(cyclops);
         }
     }
+
+    // public static void Postfix(CyclopsMotorMode __instance)
+    // {
+    //     // 1. Ownership & Validity Check
+    //     // Only the local player driving/owning the sub should broadcast to prevent redundant packets
+    //     //if (__instance.subRoot == null || !__instance.subRoot.isControllable)
+    //     //if (__instance.subRoot == null || __instance.subRoot.powerRelay.GetPowerStatus() == PowerSystem.Status.Offline)
+    //     if (__instance.subRoot == null || !__instance.subRoot.IsControlledByLocalPlayer())
+    //     {
+    //         return;
+    //     }
+
+    //     if (!__instance.subRoot.TryGetIdOrWarn(out NitroxId id)) return;
+
+    //     // 2. Throttle Logic (running at ~2Hz)
+    //     // We use a dictionary to ensure multiple Cyclops vessels don't interfere with each other's timers
+    //     lastSentHeatMap.TryGetValue(id, out float lastSentHeat);
+        
+    //     // We can simplify this: if the sub is on Flank or has heat, sync more often.
+    //     bool needsSync = Time.time > lastGlobalSentTime + 0.5f;
+
+    //     if (needsSync)
+    //     {
+    //         lastGlobalSentTime = Time.time;
+
+    //         var cyclopsLogic = Resolve<Cyclops>();
+            
+    //         // 3. Sync General State
+    //         // This method already handles:
+    //         // - Reflection to get heat from CyclopsMotorMode
+    //         // - Logic for 'overheat' and 'critical' booleans
+    //         // - Checking for active fires in SubFire
+    //         cyclopsLogic.BroadcastRuntimeState(__instance.subRoot);
+    //     }
+    // }
 }
 
 
