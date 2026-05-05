@@ -87,7 +87,7 @@
             <ExcludeFiles Include="$(TargetDir)Avalonia*" />
             3. PROTECT THE MODEL (Fixes the Release crash/MissingMethod)
             <ExcludeFiles Include="$(TargetDir)Nitrox.Model.dll" /> -->
-
+            <!-- <ExcludeFiles Include="$(TargetDir)NitroxPatcher.dll" /> -->
 
 
 
