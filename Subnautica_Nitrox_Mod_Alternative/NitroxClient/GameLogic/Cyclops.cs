@@ -83,30 +83,45 @@ namespace NitroxClient.GameLogic
                 TryGetBoolByKeywords(motorMode, new[] { "critical", "temperature" }) ??
                 TryGetBoolByKeywords(motorMode, new[] { "critical" }) ??
                 (heat >= 0.85f);
+
+            // bool hasFire = false;
+            // SubFire subFire = subRoot.GetComponent<SubFire>();
+            // if (subFire != null && subFire.roomFires != null)
+            // {
+            //     foreach (KeyValuePair<CyclopsRooms, SubFire.RoomFire> roomFire in subFire.roomFires)
+            //     {
+            //         if (roomFire.Value?.spawnNodes == null)
+            //         {
+            //             continue;
+            //         }
+            //         for (int i = 0; i < roomFire.Value.spawnNodes.Length; i++)
+            //         {
+            //             if (roomFire.Value.spawnNodes[i].childCount > 0)
+            //             {
+            //                 hasFire = true;
+            //                 break;
+            //             }
+            //         }
+            //         if (hasFire)
+            //         {
+            //             break;
+            //         }
+            //     }
+            // }
+            
             bool hasFire = false;
             SubFire subFire = subRoot.GetComponent<SubFire>();
-            if (subFire != null && subFire.roomFires != null)
+            if (subFire != null)
             {
-                foreach (KeyValuePair<CyclopsRooms, SubFire.RoomFire> roomFire in subFire.roomFires)
+                // Reuse the logic from your GetActiveRoomFires method!
+                var activeFires = GetActiveRoomFires(subFire);
+                foreach (var fire in activeFires) 
                 {
-                    if (roomFire.Value?.spawnNodes == null)
-                    {
-                        continue;
-                    }
-                    for (int i = 0; i < roomFire.Value.spawnNodes.Length; i++)
-                    {
-                        if (roomFire.Value.spawnNodes[i].childCount > 0)
-                        {
-                            hasFire = true;
-                            break;
-                        }
-                    }
-                    if (hasFire)
-                    {
-                        break;
-                    }
+                    hasFire = true;
+                    break; 
                 }
             }
+
 
             packetSender.Send(new CyclopsRuntimeState(id, engineOn, modeIndex, heat, overheat, critical, hasFire));
         }
