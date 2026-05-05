@@ -18,9 +18,14 @@ public sealed partial class CyclopsMotorMode_Update_Patch : NitroxPatch, IDynami
 
     public static void Postfix(CyclopsMotorMode __instance)
     {
-        // 1. Better Authority Check
+        // 1. Initial Null Check
+        if (__instance.subRoot == null) return;
+        
         SubRoot cyclops = __instance.subRoot;
-        if (cyclops == null || cyclops != Player.main.currentSub) return;
+
+        // 2. Local Authority Check (Is the local player the pilot?)
+        // Only the pilot has the helm HUD active.
+        if (cyclops != Player.main.currentSub) return;
 
         // Use the HUD as the 'isControllable' replacement
         CyclopsHelmHUDManager hud = cyclops.gameObject.GetComponentInChildren<CyclopsHelmHUDManager>();
@@ -38,6 +43,12 @@ public sealed partial class CyclopsMotorMode_Update_Patch : NitroxPatch, IDynami
             Resolve<Cyclops>().BroadcastRuntimeState(cyclops);
         }
     }
+
+}
+
+
+
+
 
     // public static void Postfix(CyclopsMotorMode __instance)
     // {
@@ -73,7 +84,9 @@ public sealed partial class CyclopsMotorMode_Update_Patch : NitroxPatch, IDynami
     //         cyclopsLogic.BroadcastRuntimeState(__instance.subRoot);
     //     }
     // }
-}
+
+
+
 
 
 // using System.Reflection;
